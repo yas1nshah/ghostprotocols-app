@@ -1,8 +1,9 @@
 import { Colors } from "@/constants/Colors";
-import { useColorScheme } from "nativewind";
+import { useColorScheme } from "react-native";
+
 
 const useThemeColors = () => {
-  const {colorScheme} = useColorScheme();
+  const colorScheme = useColorScheme();
     return Colors[colorScheme === "dark" ? "dark" : "light"];
   };
   

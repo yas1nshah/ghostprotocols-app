@@ -7,6 +7,7 @@ import BottomSheet, { BottomSheetView } from '@gorhom/bottom-sheet';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import useCityStore from '@/hooks/data/useCityStore';
 import { router } from 'expo-router';
+import useUpdate from '@/hooks/useUpdate';
 
 interface City {
   id: number;
@@ -28,7 +29,7 @@ type ListItem = SectionHeader | SectionItem;
 
 const SelectCities: React.FC = () => {
   const colors = useThemeColors();
-  const signup = useSignUp();
+  const update = useUpdate();
   const { filteredCities, searchText, setSearchText, filterCities } = useCityStore();
 
   useEffect(() => {
@@ -67,7 +68,7 @@ const SelectCities: React.FC = () => {
     return (
       <TouchableOpacity 
         onPress={() => {
-          signup.updateCity(item.id)
+          update.updateCity(item.id)
           router.back()
         }}
         className="p-2 border-b border-light-muted dark:border-dark-muted">
@@ -96,6 +97,7 @@ const SelectCities: React.FC = () => {
           placeholder="Search cities"
           value={searchText}
           onChangeText={handleSearch}
+          
         />
         <FlashList
           data={flattenedData}

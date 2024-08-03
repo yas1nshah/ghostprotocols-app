@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity, ScrollView, Switch } from 'react-native'
+import { View, Text, Image, TouchableOpacity, ScrollView, Switch, TextInput } from 'react-native'
 import React, { useEffect, useRef, useState } from 'react'
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 import { BlurView } from 'expo-blur'
@@ -20,13 +20,16 @@ import facebookIcon from '@/assets/icons/facebook.png';
 import whatsappIcon from '@/assets/icons/whatsapp.png';
 import tiktokIcon from '@/assets/icons/tiktok.png';
 import useThemeColors from '@/hooks/useThemeColors';
+import { router } from 'expo-router';
+import { useQuery } from 'react-query';
+import { userDetailsReq } from '@/functions/user';
+import { URLs } from '@/constants/Urls';
 
 
 
 const SettingsScreen = () => {
   const colors = useThemeColors()
-  const {colorScheme} = useColorScheme()
-  const insets = useSafeAreaInsets();
+
 
   const scrollViewRef = useRef(null); // Create a ref for the ScrollView
   const opacity = useSharedValue(0);
@@ -49,6 +52,8 @@ const SettingsScreen = () => {
   };
 
 
+  const { data, isLoading, isError, isSuccess } = useQuery({ queryKey: ['user'], queryFn: userDetailsReq, cacheTime:0 });
+
   return (
     <View className='bg-light-background dark:bg-dark-background h-full p-4'>
       
@@ -69,54 +74,74 @@ const SettingsScreen = () => {
             {/* HEADER */}
             <ThemedText type='heading-xl' content='Settings' otherStyles='pb-4 pt-12' />
             
-            <View  className='p-2 mb-2 bg-light-card dark:bg-dark-card rounded-xl'>
-                    <View className='flex-row'>
-                        <View className='h-16 w-16 rounded-full overflow-hidden mx-2 bg-light-muted dark:bg-dark-muted'>
-                            <Image 
-                                source={{ uri: 'https://ienglishstatus.com/wp-content/uploads/2022/02/Bad-Boy-Whatsapp-DP.jpg' }}
-                                style={{ height: '100%', width: '100%' }}
-                            />
-                        </View>
-
-                    <View className='px-2 justify-start  flex-grow'>
-                        <ThemedText type='heading' content='Ghost Protocols' />
-                        <ThemedText type='content' content='Ghost Protocols' />
-                    </View>
-                
-                
-                    <View className='p-3 h-10 w-10 bg-light-card dark:bg-dark-card rounded-full justify-start'>
-                        <TouchableOpacity>
-                            <Image 
-                            source={qrImage}
-                            style={{ height: '100%', width: '100%', resizeMode: 'contain', tintColor: colors.foregroundCode }}
-                            />
+            {
+                isError &&
+                <View className='bg-light-card dark:bg-dark-card p-4 rounded-xl my-4'>
+                    <ThemedText type='subheading' content='Sigin to Your Account'/>
+                    <View className='flex-row py-4'>
+                        <TouchableOpacity className='flex-grow rounded-xl mx-2 bg-light-muted dark:bg-dark-muted px-4 py-2'>
+                            <ThemedText type='button' content='SIGN IN'/>
+                        </TouchableOpacity>
+                        <TouchableOpacity className='flex-grow rounded-xl mx-2 bg-light-primary dark:bg-dark-primary px-4 py-2'>
+                            <ThemedText type='button' content='SIGN UP'/>
                         </TouchableOpacity>
                     </View>
-                    </View>
+                </View>
+            }
+
+            {
+                isSuccess &&
+                <View  className='p-2 mb-2 bg-light-card dark:bg-dark-card rounded-xl'>
+                        <View className='flex-row'>
+                            <View className='h-16 w-16 rounded-full overflow-hidden mx-2 bg-light-muted dark:bg-dark-muted'>
+                                <Image 
+                                    source={{ uri: `${URLs.media.profile}${data.user.profile_pic}` }}
+                                    style={{ height: '100%', width: '100%' }}
+                                />
+                            </View>
+
+                        <View className='px-2 justify-start  flex-grow'>
+                            <ThemedText type='heading' content={data.user.name} />
+                            <ThemedText type='content' content={data.user.name ? "Dealer Account" : "Indivisual Account"} />
+                            
+                        </View>
                     
-                    <View className='w-full border-t-2 my-1 border-light-muted/10 dark:border-dark-muted/10 '/>
                     
-                    <TouchableOpacity className='flex-row h-10'>
-                        <View className='w-10 h-10 p-3'>
-                            <Image 
-                                source={editIcon}
+                        <View className='p-3 h-10 w-10 bg-light-card dark:bg-dark-card rounded-full justify-start'>
+                            <TouchableOpacity>
+                                <Image 
+                                source={qrImage}
                                 style={{ height: '100%', width: '100%', resizeMode: 'contain', tintColor: colors.foregroundCode }}
-                            />
+                                />
+                            </TouchableOpacity>
                         </View>
-
-                        <View className=' h-10 p-2 flex-grow'>
-                            <ThemedText type='subheading' content='Edit Profile'/>
                         </View>
+                        
+                        <View className='w-full border-t-2 my-1 border-light-muted/10 dark:border-dark-muted/10 '/>
+                        
+                        <TouchableOpacity 
+                        onPress={()=> router.push('/home/settings/edit-profile')}
+                        className='flex-row h-10'>
+                            <View className='w-10 h-10 p-3'>
+                                <Image 
+                                    source={editIcon}
+                                    style={{ height: '100%', width: '100%', resizeMode: 'contain', tintColor: colors.foregroundCode }}
+                                />
+                            </View>
 
-                        <View className='w-10 h-10 p-2'>
-                            <Image 
-                                source={arrTopRight}
-                                style={{ height: '100%', width: '100%', resizeMode: 'contain', tintColor: colors.foregroundCode }}
-                            />
-                        </View>
-                    </TouchableOpacity>
-            </View>
+                            <View className=' h-10 p-2 flex-grow'>
+                                <ThemedText type='subheading' content='Edit Profile'/>
+                            </View>
 
+                            <View className='w-10 h-10 p-2'>
+                                <Image 
+                                    source={arrTopRight}
+                                    style={{ height: '100%', width: '100%', resizeMode: 'contain', tintColor: colors.foregroundCode }}
+                                />
+                            </View>
+                        </TouchableOpacity>
+                </View>
+            }
                 {/* Favourties */}
             <View  className='p-2 my-2 bg-light-card dark:bg-dark-card rounded-xl'>
                     

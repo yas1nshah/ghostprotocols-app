@@ -18,9 +18,10 @@ const Index = () => {
   const colors = useThemeColors();
   
   const { mutate, isLoading, isError, data, error, isSuccess } = useMutation("signup", signInReq, {
-    onSuccess: async () => {
+    onSuccess: async (data) => {
       // Play the ping sound
       const { sound } = await Audio.Sound.createAsync(require('@/assets/sounds/ping.mp3'));
+      console.log(data)
       await sound.playAsync();
       await SecureStore.setItemAsync("auth_token", data.authentication_token.token);
       await SecureStore.setItemAsync("auth_token_expiry", data.authentication_token.expiry);
@@ -95,7 +96,7 @@ const Index = () => {
 
 
         
-          {isLoading && 
+          {!isLoading && 
             <TouchableOpacity
               className='mt-10 px-4 py-2 bg-light-primary dark:bg-dark-primary rounded-xl'
               onPress={() => mutate(form)}
@@ -111,7 +112,7 @@ const Index = () => {
               content="Don't have an Account?"
               type='content'
               />
-            <Link href={"/auth/sign-up"}>
+            <Link replace={true} href={"/auth/sign-up"}>
               <ThemedText 
                 content=' Register'
                 type='link'

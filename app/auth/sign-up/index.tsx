@@ -77,13 +77,13 @@ const Index = () => {
             <ThemedText type='button' content='NEXT'/>
           </TouchableOpacity>
           
-          <View className='flex-row justify-end p-4'>
+          <View className='flex-row justify-end items-end p-4'>
 
             <ThemedText 
               content='Are you Already Registered?'
               type='content'
               />
-            <Link href={"/auth/sign-in"}>
+            <Link replace={true} href={"/auth/sign-in"}>
               <ThemedText 
                 content=' Login'
                 type='link'
