@@ -11,8 +11,7 @@ const ChangeProfile = ({profile_pic}: {profile_pic: string}) => {
   const [selectedImage, setSelectedImage] = useState<string | null>(profile_pic || "");
 
   const { mutate, isLoading, isError, data, error, isSuccess } = useMutation(
-    "update_profile",
-    userUpdateProfilePicReq,
+    "update_profile", userUpdateProfilePicReq,
     {
       onSuccess: async () => {
         const { sound } = await Audio.Sound.createAsync(require('@/assets/sounds/ping.mp3'));

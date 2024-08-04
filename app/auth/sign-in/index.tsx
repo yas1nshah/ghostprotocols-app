@@ -17,7 +17,7 @@ const Index = () => {
   const form = useSignIn();
   const colors = useThemeColors();
   
-  const { mutate, isLoading, isError, data, error, isSuccess } = useMutation("signup", signInReq, {
+  const { mutate, isLoading, isError, data, error, isSuccess } = useMutation("signin", signInReq, {
     onSuccess: async (data) => {
       // Play the ping sound
       const { sound } = await Audio.Sound.createAsync(require('@/assets/sounds/ping.mp3'));

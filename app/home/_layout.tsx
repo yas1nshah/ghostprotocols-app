@@ -9,8 +9,7 @@ const HomeLayout = () => {
       <Tabs.Screen name="search" options={{ title: 'Search', headerShown:false }} />
       <Tabs.Screen name="addListing" options={{ title: 'Profile', headerShown:false }} />
       <Tabs.Screen name="demandList" options={{ title: 'Demand List', headerShown:false }} />
-      <Tabs.Screen name="settings" options={{ title: 'Settings', headerShown:false,
-       headerTitleAlign:'center', headerStyle: {backgroundColor: colors.background} }} />
+      <Tabs.Screen name="settings" options={{ title: 'Settings', headerShown:false }} />
     </Tabs>
   );
 }

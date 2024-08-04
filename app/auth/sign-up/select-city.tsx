@@ -96,6 +96,7 @@ const SelectCities: React.FC = () => {
           placeholder="Search cities"
           value={searchText}
           onChangeText={handleSearch}
+          
         />
         <FlashList
           data={flattenedData}

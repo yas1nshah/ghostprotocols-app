@@ -26,6 +26,7 @@ import postAdImg from '@/assets/images/ui/post-ad.png';
 
 
 import FeaturedAutoPlay from '@/components/FeaturedAutoPlay';
+import { router } from 'expo-router';
 
 
 
@@ -47,9 +48,9 @@ const AddListingScreen = () => {
     const contentHeight = event.nativeEvent.contentSize.height;
     const layoutHeight = event.nativeEvent.layoutMeasurement.height;
     const scrollPercentage = (contentOffsetY / (contentHeight - layoutHeight)) * 100;
-    if (scrollPercentage > 40 && !showHeader) {
+    if (scrollPercentage > 20 && !showHeader) {
       setShowHeader(true);
-    } else if (scrollPercentage <= 40 && showHeader) {
+    } else if (scrollPercentage <= 20 && showHeader) {
       setShowHeader(false);
     }
   };
@@ -96,7 +97,7 @@ const AddListingScreen = () => {
                 type='content'
               />
 
-              <TouchableOpacity className='w-2/3 my-2 bg-light-background dark:bg-dark-background px-4 py-2 rounded-xl flex-row items-center justify-evenly'>
+              <TouchableOpacity className='w-2/3 my-2 bg-light-background dark:bg-dark-background px-4 py-1 rounded-xl flex-row items-center justify-evenly'>
                 <ThemedText
                   content='SELL NOW'
                   type='button'
@@ -137,7 +138,9 @@ const AddListingScreen = () => {
                 type='content'
               />
 
-              <TouchableOpacity className='w-2/3 my-2 bg-light-background dark:bg-dark-background px-4 py-2 rounded-xl flex-row items-center justify-evenly'>
+              <TouchableOpacity 
+              onPress={()=> router.push('/home/addListing/add-car-form')}
+              className='w-2/3 my-2 bg-light-background dark:bg-dark-background px-4 py-1 rounded-xl flex-row items-center justify-evenly'>
                 <ThemedText
                   content='POST AD'
                   type='button'
