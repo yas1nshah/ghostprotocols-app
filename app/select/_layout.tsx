@@ -17,6 +17,16 @@ const SelectLayout = () => {
           headerBackTitle: "Back",
         }}
       />
+      <Stack.Screen
+        name="models"
+        options={{
+          headerTitle: "Select Model",
+          headerShown: true,
+          headerStyle: { backgroundColor: colors.backgroundCode },
+          headerTintColor: colors.foregroundCode,
+          headerBackTitle: "Back",
+        }}
+      />
     </Stack>
   );
 };

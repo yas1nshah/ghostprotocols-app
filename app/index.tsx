@@ -14,8 +14,13 @@ const IndexScreen = () => {
             <Text>HomeScreen</Text>
         </Link>
         <View className='h-4'></View>
-        <Link href={'/select/cities'}>
+        <Link href={'/select/models'}>
             <Text>Select</Text>
+        </Link>
+
+        <View className='h-4'></View>
+        <Link className='h-4' href={'/add-listing'}>
+            <Text>Add Listing</Text>
         </Link>
     </View>
   )

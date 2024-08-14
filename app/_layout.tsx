@@ -39,6 +39,7 @@ export default function RootLayout() {
       <Stack>
         <Stack.Screen name="index"  options={{ headerShown: false }} />
         <Stack.Screen name="home"  options={{ headerShown: false }} />
+        <Stack.Screen name="add-listing"  options={{ headerShown: false }} />
         <Stack.Screen name="auth"   options={{
           headerStyle: {backgroundColor: colors.backgroundCode},
           headerTintColor: colors.foregroundCode,
@@ -47,7 +48,7 @@ export default function RootLayout() {
           headerShown: true,
          
         }} />
-        <Stack.Screen name="select"  options={{ headerShown: false }} />
+        <Stack.Screen name="select"  options={{ headerShown: true }} />
      
       </Stack>
     </QueryClientProvider>

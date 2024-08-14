@@ -1,0 +1,2792 @@
+[
+  {
+    "id": 1,
+    "name": "unregistered",
+    "name_ur": "unregistered",
+    "type": "Un Registered"
+  },
+  {
+    "id": 4,
+    "name": "Karachi",
+    "name_ur": "کراچی",
+    "type": "City"
+  },
+  {
+    "id": 5,
+    "name": "Lahore",
+    "name_ur": "لاہور",
+    "type": "City"
+  },
+  {
+    "id": 6,
+    "name": "Islamabad",
+    "name_ur": "اسلام آباد",
+    "type": "City"
+  },
+  {
+    "id": 7,
+    "name": "Rawalpindi",
+    "name_ur": "راولپنڈی",
+    "type": "City"
+  },
+  {
+    "id": 8,
+    "name": "Peshawar",
+    "name_ur": "پشاور",
+    "type": "City"
+  },
+  {
+    "id": 9,
+    "name": "Abbottabad",
+    "name_ur": "ایبٹ آباد",
+    "type": "City"
+  },
+  {
+    "id": 10,
+    "name": "Abdul Hakeem",
+    "name_ur": "عبدالحکیم",
+    "type": "City"
+  },
+  {
+    "id": 11,
+    "name": "Adda jahan khan",
+    "name_ur": "اڈا جہان خان",
+    "type": "City"
+  },
+  {
+    "id": 12,
+    "name": "Adda shaiwala",
+    "name_ur": "اڈا شہواللہ",
+    "type": "City"
+  },
+  {
+    "id": 13,
+    "name": "Ahmed Pur East",
+    "name_ur": "احمد پور ایسٹ",
+    "type": "City"
+  },
+  {
+    "id": 14,
+    "name": "Ahmedpur Lamma",
+    "name_ur": "Ahmedpur Lamma",
+    "type": "City"
+  },
+  {
+    "id": 15,
+    "name": "Akora khattak",
+    "name_ur": "اکوڑہ خٹک",
+    "type": "City"
+  },
+  {
+    "id": 16,
+    "name": "Ali chak",
+    "name_ur": "علی چک",
+    "type": "City"
+  },
+  {
+    "id": 17,
+    "name": "Alipur Chatta",
+    "name_ur": "Alipur Chatta",
+    "type": "City"
+  },
+  {
+    "id": 18,
+    "name": "Allahabad",
+    "name_ur": "الہ آباد",
+    "type": "City"
+  },
+  {
+    "id": 19,
+    "name": "Amangarh",
+    "name_ur": "امن گڑھ",
+    "type": "City"
+  },
+  {
+    "id": 20,
+    "name": "Arifwala",
+    "name_ur": "عارف والا",
+    "type": "City"
+  },
+  {
+    "id": 21,
+    "name": "Attock",
+    "name_ur": "اٹک",
+    "type": "City"
+  },
+  {
+    "id": 22,
+    "name": "Babarloi",
+    "name_ur": "ببرلوء",
+    "type": "City"
+  },
+  {
+    "id": 23,
+    "name": "Babri banda",
+    "name_ur": "بابری بندہ",
+    "type": "City"
+  },
+  {
+    "id": 24,
+    "name": "Badin",
+    "name_ur": "بدین",
+    "type": "City"
+  },
+  {
+    "id": 25,
+    "name": "Bahawalnagar",
+    "name_ur": "بہاولنگر",
+    "type": "City"
+  },
+  {
+    "id": 26,
+    "name": "Bahawalpur",
+    "name_ur": "بہاولپور",
+    "type": "City"
+  },
+  {
+    "id": 27,
+    "name": "Balakot",
+    "name_ur": "بالاکوٹ",
+    "type": "City"
+  },
+  {
+    "id": 28,
+    "name": "Bannu",
+    "name_ur": "بنوں",
+    "type": "City"
+  },
+  {
+    "id": 29,
+    "name": "Baroute",
+    "name_ur": "Baroute",
+    "type": "City"
+  },
+  {
+    "id": 30,
+    "name": "Basirpur",
+    "name_ur": "Basirpur",
+    "type": "City"
+  },
+  {
+    "id": 31,
+    "name": "Basti Shorekot",
+    "name_ur": "Basti Shorekot",
+    "type": "City"
+  },
+  {
+    "id": 32,
+    "name": "Bat khela",
+    "name_ur": "بٹ خیلہ",
+    "type": "City"
+  },
+  {
+    "id": 33,
+    "name": "Batang",
+    "name_ur": "بلی ٹنگ",
+    "type": "City"
+  },
+  {
+    "id": 34,
+    "name": "Bhai pheru",
+    "name_ur": "بھائی پھیرو",
+    "type": "City"
+  },
+  {
+    "id": 35,
+    "name": "Bhakkar",
+    "name_ur": "بھکر",
+    "type": "City"
+  },
+  {
+    "id": 36,
+    "name": "Bhalwal",
+    "name_ur": "بہلوال",
+    "type": "City"
+  },
+  {
+    "id": 37,
+    "name": "Bhan saeedabad",
+    "name_ur": "بھان سعید آباد",
+    "type": "City"
+  },
+  {
+    "id": 38,
+    "name": "Bhera",
+    "name_ur": "بھیرہ",
+    "type": "City"
+  },
+  {
+    "id": 39,
+    "name": "Bhikky",
+    "name_ur": "Bhikky",
+    "type": "City"
+  },
+  {
+    "id": 40,
+    "name": "Bhimber",
+    "name_ur": "بھمبر",
+    "type": "City"
+  },
+  {
+    "id": 41,
+    "name": "Bhirya road",
+    "name_ur": "بھریا روڈ",
+    "type": "City"
+  },
+  {
+    "id": 42,
+    "name": "Bhuawana",
+    "name_ur": "بھوانہ",
+    "type": "City"
+  },
+  {
+    "id": 43,
+    "name": "Buchay key",
+    "name_ur": "بچے کے",
+    "type": "City"
+  },
+  {
+    "id": 44,
+    "name": "Buner",
+    "name_ur": "بونیر",
+    "type": "City"
+  },
+  {
+    "id": 45,
+    "name": "Burewala",
+    "name_ur": "بورے والا",
+    "type": "City"
+  },
+  {
+    "id": 46,
+    "name": "Chaininda",
+    "name_ur": "چینندا",
+    "type": "City"
+  },
+  {
+    "id": 47,
+    "name": "Chak 4 b c",
+    "name_ur": "چک 4 ب س",
+    "type": "City"
+  },
+  {
+    "id": 48,
+    "name": "Chak 46",
+    "name_ur": "چک 46",
+    "type": "City"
+  },
+  {
+    "id": 49,
+    "name": "Chak jamal",
+    "name_ur": "چک جمال",
+    "type": "City"
+  },
+  {
+    "id": 50,
+    "name": "Chak jhumra",
+    "name_ur": "چک جھمرہ",
+    "type": "City"
+  },
+  {
+    "id": 51,
+    "name": "Chak Shahzad",
+    "name_ur": "چک شہزاد",
+    "type": "City"
+  },
+  {
+    "id": 52,
+    "name": "Chaklala",
+    "name_ur": "چکلالہ",
+    "type": "City"
+  },
+  {
+    "id": 53,
+    "name": "Chaksawari",
+    "name_ur": "چکسواڑی",
+    "type": "City"
+  },
+  {
+    "id": 54,
+    "name": "Chakwal",
+    "name_ur": "چکوال",
+    "type": "City"
+  },
+  {
+    "id": 55,
+    "name": "Charsadda",
+    "name_ur": "چارسدہ",
+    "type": "City"
+  },
+  {
+    "id": 56,
+    "name": "Chashma",
+    "name_ur": "چشمہ",
+    "type": "City"
+  },
+  {
+    "id": 57,
+    "name": "Chawinda",
+    "name_ur": "چونڈہ",
+    "type": "City"
+  },
+  {
+    "id": 58,
+    "name": "Chenab Nagar",
+    "name_ur": "ربوہ",
+    "type": "City"
+  },
+  {
+    "id": 59,
+    "name": "Chichawatni",
+    "name_ur": "چیچہ وطنی",
+    "type": "City"
+  },
+  {
+    "id": 60,
+    "name": "Chiniot",
+    "name_ur": "چنیوٹ",
+    "type": "City"
+  },
+  {
+    "id": 61,
+    "name": "Chishtian",
+    "name_ur": "چشتیاں",
+    "type": "City"
+  },
+  {
+    "id": 62,
+    "name": "Chitral",
+    "name_ur": "چترال",
+    "type": "City"
+  },
+  {
+    "id": 63,
+    "name": "Chohar jamali",
+    "name_ur": "چوہڑ جمالی",
+    "type": "City"
+  },
+  {
+    "id": 64,
+    "name": "Choppar hatta",
+    "name_ur": "چھوپر ہٹا",
+    "type": "City"
+  },
+  {
+    "id": 65,
+    "name": "Chowha saidan shah",
+    "name_ur": "چوآ سیدن شاہ",
+    "type": "City"
+  },
+  {
+    "id": 66,
+    "name": "Chowk azam",
+    "name_ur": "چوک اعظم",
+    "type": "City"
+  },
+  {
+    "id": 67,
+    "name": "Chowk mailta",
+    "name_ur": "چوک میتلا",
+    "type": "City"
+  },
+  {
+    "id": 68,
+    "name": "Chowk munda",
+    "name_ur": "چوک منڈا",
+    "type": "City"
+  },
+  {
+    "id": 69,
+    "name": "Chunian",
+    "name_ur": "چونیاں",
+    "type": "City"
+  },
+  {
+    "id": 70,
+    "name": "D.G.Khan",
+    "name_ur": "ڈیرہ غازی خان",
+    "type": "City"
+  },
+  {
+    "id": 71,
+    "name": "Dadakhel",
+    "name_ur": "داداخیل",
+    "type": "City"
+  },
+  {
+    "id": 72,
+    "name": "Dadu",
+    "name_ur": "دادو",
+    "type": "City"
+  },
+  {
+    "id": 73,
+    "name": "Dadyal Ak",
+    "name_ur": "ڈڈھیال آزاد کشمیر",
+    "type": "City"
+  },
+  {
+    "id": 74,
+    "name": "Daharki",
+    "name_ur": "ڈہرکی",
+    "type": "City"
+  },
+  {
+    "id": 75,
+    "name": "Dandot",
+    "name_ur": "ڈنڈوت",
+    "type": "City"
+  },
+  {
+    "id": 76,
+    "name": "Dargai",
+    "name_ur": "درگئی",
+    "type": "City"
+  },
+  {
+    "id": 77,
+    "name": "Darya khan",
+    "name_ur": "دریا خان",
+    "type": "City"
+  },
+  {
+    "id": 78,
+    "name": "Daska",
+    "name_ur": "ڈسکہ",
+    "type": "City"
+  },
+  {
+    "id": 79,
+    "name": "Daud khel",
+    "name_ur": "داؤد خیل",
+    "type": "City"
+  },
+  {
+    "id": 80,
+    "name": "Daulatpur",
+    "name_ur": "دولت پور",
+    "type": "City"
+  },
+  {
+    "id": 81,
+    "name": "Deh pathan",
+    "name_ur": "دیہہ پٹھان",
+    "type": "City"
+  },
+  {
+    "id": 82,
+    "name": "Depal pur",
+    "name_ur": "دیپال پور",
+    "type": "City"
+  },
+  {
+    "id": 83,
+    "name": "Dera Allah Yar",
+    "name_ur": "Dera Allah Yar",
+    "type": "City"
+  },
+  {
+    "id": 84,
+    "name": "Dera Bugti",
+    "name_ur": "ڈیرہ بگٹی",
+    "type": "City"
+  },
+  {
+    "id": 85,
+    "name": "Dera ismail khan",
+    "name_ur": "ڈیرہ اسماعیل خان",
+    "type": "City"
+  },
+  {
+    "id": 86,
+    "name": "Dera murad jamali",
+    "name_ur": "ڈیرہ مراد جمالی",
+    "type": "City"
+  },
+  {
+    "id": 87,
+    "name": "Dera nawab sahib",
+    "name_ur": "ڈیرہ نواب صاحب",
+    "type": "City"
+  },
+  {
+    "id": 88,
+    "name": "Dhatmal",
+    "name_ur": "دھمتھل",
+    "type": "City"
+  },
+  {
+    "id": 89,
+    "name": "Dhoun kal",
+    "name_ur": "دھونکل",
+    "type": "City"
+  },
+  {
+    "id": 90,
+    "name": "Digri",
+    "name_ur": "ڈگری",
+    "type": "City"
+  },
+  {
+    "id": 91,
+    "name": "Dijkot",
+    "name_ur": "ڈجکوٹ",
+    "type": "City"
+  },
+  {
+    "id": 92,
+    "name": "Dina",
+    "name_ur": "دینا",
+    "type": "City"
+  },
+  {
+    "id": 93,
+    "name": "Dinga",
+    "name_ur": "ڈنگہ",
+    "type": "City"
+  },
+  {
+    "id": 94,
+    "name": "Dir",
+    "name_ur": "دیر",
+    "type": "City"
+  },
+  {
+    "id": 95,
+    "name": "Doaba",
+    "name_ur": "دوآبہ",
+    "type": "City"
+  },
+  {
+    "id": 96,
+    "name": "Doltala",
+    "name_ur": "دولتالہ",
+    "type": "City"
+  },
+  {
+    "id": 97,
+    "name": "Domeli",
+    "name_ur": "ڈومیلی",
+    "type": "City"
+  },
+  {
+    "id": 98,
+    "name": "Donga Bonga",
+    "name_ur": "Donga Bonga",
+    "type": "City"
+  },
+  {
+    "id": 99,
+    "name": "Dudial",
+    "name_ur": "ڈھڈیال",
+    "type": "City"
+  },
+  {
+    "id": 100,
+    "name": "Dunia Pur",
+    "name_ur": "دنیاپور",
+    "type": "City"
+  },
+  {
+    "id": 101,
+    "name": "Eminabad",
+    "name_ur": "ایمن آباد",
+    "type": "City"
+  },
+  {
+    "id": 102,
+    "name": "Esa Khel",
+    "name_ur": "عیسیٰ خیل",
+    "type": "City"
+  },
+  {
+    "id": 103,
+    "name": "Faisalabad",
+    "name_ur": "فیصل آباد",
+    "type": "City"
+  },
+  {
+    "id": 104,
+    "name": "Faqirwali",
+    "name_ur": "Faqirwali",
+    "type": "City"
+  },
+  {
+    "id": 105,
+    "name": "Farooqabad",
+    "name_ur": "فاروق آباد",
+    "type": "City"
+  },
+  {
+    "id": 106,
+    "name": "Fateh Jang",
+    "name_ur": "فتح جنگ",
+    "type": "City"
+  },
+  {
+    "id": 107,
+    "name": "Fateh pur",
+    "name_ur": "فتح پور",
+    "type": "City"
+  },
+  {
+    "id": 108,
+    "name": "Feroz walla",
+    "name_ur": "فیروز والا",
+    "type": "City"
+  },
+  {
+    "id": 109,
+    "name": "Feroz watan",
+    "name_ur": "فیروز وٹواں",
+    "type": "City"
+  },
+  {
+    "id": 110,
+    "name": "Feroz Watwan",
+    "name_ur": "Feroz Watwan",
+    "type": "City"
+  },
+  {
+    "id": 111,
+    "name": "Fiza got",
+    "name_ur": "فضا گٹ",
+    "type": "City"
+  },
+  {
+    "id": 112,
+    "name": "Fort Abbass",
+    "name_ur": "Fort Abbass",
+    "type": "City"
+  },
+  {
+    "id": 113,
+    "name": "Gadoon amazai",
+    "name_ur": "گدون امازئی",
+    "type": "City"
+  },
+  {
+    "id": 114,
+    "name": "Gaggo mandi",
+    "name_ur": "گگو منڈی",
+    "type": "City"
+  },
+  {
+    "id": 115,
+    "name": "Gakhar mandi",
+    "name_ur": "گکھڑ منڈی",
+    "type": "City"
+  },
+  {
+    "id": 116,
+    "name": "Gambat",
+    "name_ur": "گمبٹ",
+    "type": "City"
+  },
+  {
+    "id": 117,
+    "name": "Gambet",
+    "name_ur": "گمبٹ",
+    "type": "City"
+  },
+  {
+    "id": 118,
+    "name": "Garh maharaja",
+    "name_ur": "گڑھ مہاراجہ",
+    "type": "City"
+  },
+  {
+    "id": 119,
+    "name": "Garh more",
+    "name_ur": "گڑھ مور",
+    "type": "City"
+  },
+  {
+    "id": 120,
+    "name": "Garhi yaseen",
+    "name_ur": "گڑھی یاسین",
+    "type": "City"
+  },
+  {
+    "id": 121,
+    "name": "Gari habibullah",
+    "name_ur": "گڑھی حبیب اللہ",
+    "type": "City"
+  },
+  {
+    "id": 122,
+    "name": "Gari mori",
+    "name_ur": "گاڑھی موری",
+    "type": "City"
+  },
+  {
+    "id": 123,
+    "name": "Gharo",
+    "name_ur": "گھارو",
+    "type": "City"
+  },
+  {
+    "id": 124,
+    "name": "Ghazi",
+    "name_ur": "غازی",
+    "type": "City"
+  },
+  {
+    "id": 125,
+    "name": "Ghotki",
+    "name_ur": "گھوٹکی",
+    "type": "City"
+  },
+  {
+    "id": 126,
+    "name": "Gilgit",
+    "name_ur": "گلگت",
+    "type": "City"
+  },
+  {
+    "id": 127,
+    "name": "Gohar ghoushti",
+    "name_ur": "گوہر",
+    "type": "City"
+  },
+  {
+    "id": 128,
+    "name": "Gojra",
+    "name_ur": "گوجرا",
+    "type": "City"
+  },
+  {
+    "id": 129,
+    "name": "Goth Machi",
+    "name_ur": "ماچھی گوٹھ",
+    "type": "City"
+  },
+  {
+    "id": 130,
+    "name": "Goular khel",
+    "name_ur": "گولر خیل",
+    "type": "City"
+  },
+  {
+    "id": 131,
+    "name": "Guddu",
+    "name_ur": "گڈو",
+    "type": "City"
+  },
+  {
+    "id": 132,
+    "name": "Gujar khan",
+    "name_ur": "گجر خان",
+    "type": "City"
+  },
+  {
+    "id": 133,
+    "name": "Gujar Khan",
+    "name_ur": "گجر خان",
+    "type": "City"
+  },
+  {
+    "id": 134,
+    "name": "Gujranwala",
+    "name_ur": "گجرانوالہ",
+    "type": "City"
+  },
+  {
+    "id": 135,
+    "name": "Gujrat",
+    "name_ur": "گجرات",
+    "type": "City"
+  },
+  {
+    "id": 136,
+    "name": "Gwadar",
+    "name_ur": "گوادر",
+    "type": "City"
+  },
+  {
+    "id": 137,
+    "name": "Hafizabad",
+    "name_ur": "حافظ آباد",
+    "type": "City"
+  },
+  {
+    "id": 138,
+    "name": "Hala",
+    "name_ur": "ہالا",
+    "type": "City"
+  },
+  {
+    "id": 139,
+    "name": "Hangu",
+    "name_ur": "ہنگو",
+    "type": "City"
+  },
+  {
+    "id": 140,
+    "name": "Harappa",
+    "name_ur": "Harappa",
+    "type": "City"
+  },
+  {
+    "id": 141,
+    "name": "Haripur",
+    "name_ur": "ہری پور",
+    "type": "City"
+  },
+  {
+    "id": 142,
+    "name": "Hariwala",
+    "name_ur": "ہری والا",
+    "type": "City"
+  },
+  {
+    "id": 143,
+    "name": "Haroonabad",
+    "name_ur": "ہارون آباد",
+    "type": "City"
+  },
+  {
+    "id": 144,
+    "name": "Hasilpur",
+    "name_ur": "حاصل پور",
+    "type": "City"
+  },
+  {
+    "id": 145,
+    "name": "Hassan abdal",
+    "name_ur": "حسن ابدال",
+    "type": "City"
+  },
+  {
+    "id": 146,
+    "name": "Hattar",
+    "name_ur": "حطار‎",
+    "type": "City"
+  },
+  {
+    "id": 147,
+    "name": "Hattian",
+    "name_ur": "Hattian",
+    "type": "City"
+  },
+  {
+    "id": 148,
+    "name": "Hattian lawrencepur",
+    "name_ur": "ہٹیاں لارنس پور",
+    "type": "City"
+  },
+  {
+    "id": 149,
+    "name": "Havali Lakhan",
+    "name_ur": "حویلی لكها",
+    "type": "City"
+  },
+  {
+    "id": 150,
+    "name": "Hawilian",
+    "name_ur": "حویلیاں",
+    "type": "City"
+  },
+  {
+    "id": 151,
+    "name": "Hayatabad",
+    "name_ur": "حیات آباد",
+    "type": "City"
+  },
+  {
+    "id": 152,
+    "name": "Hazro",
+    "name_ur": "حضرو‎",
+    "type": "City"
+  },
+  {
+    "id": 153,
+    "name": "Head marala",
+    "name_ur": "ہیڈ مرالا",
+    "type": "City"
+  },
+  {
+    "id": 154,
+    "name": "Hub",
+    "name_ur": "حب",
+    "type": "City"
+  },
+  {
+    "id": 155,
+    "name": "Hub-Balochistan",
+    "name_ur": "حب بلوچستان",
+    "type": "City"
+  },
+  {
+    "id": 156,
+    "name": "Hujra Shah Mukeem",
+    "name_ur": "Hujra Shah Mukeem",
+    "type": "City"
+  },
+  {
+    "id": 157,
+    "name": "Hunza",
+    "name_ur": "ہنزہ",
+    "type": "City"
+  },
+  {
+    "id": 158,
+    "name": "Hyderabad",
+    "name_ur": "حیدرآباد",
+    "type": "City"
+  },
+  {
+    "id": 159,
+    "name": "Iskandarabad",
+    "name_ur": "Iskandarabad",
+    "type": "City"
+  },
+  {
+    "id": 160,
+    "name": "Jacobabad",
+    "name_ur": "جیکب آباد",
+    "type": "City"
+  },
+  {
+    "id": 161,
+    "name": "Jahaniya",
+    "name_ur": "جہانیاں",
+    "type": "City"
+  },
+  {
+    "id": 162,
+    "name": "Jaja abasian",
+    "name_ur": "ججا عباسیاں",
+    "type": "City"
+  },
+  {
+    "id": 163,
+    "name": "Jalalpur Jattan",
+    "name_ur": "جلال پور جٹاں",
+    "type": "City"
+  },
+  {
+    "id": 164,
+    "name": "Jalalpur Pirwala",
+    "name_ur": "جلال پور پیر والا",
+    "type": "City"
+  },
+  {
+    "id": 165,
+    "name": "Jampur",
+    "name_ur": "جام پور",
+    "type": "City"
+  },
+  {
+    "id": 166,
+    "name": "Jamrud road",
+    "name_ur": "جمرود روڈ",
+    "type": "City"
+  },
+  {
+    "id": 167,
+    "name": "Jamshoro",
+    "name_ur": "جامشورو",
+    "type": "City"
+  },
+  {
+    "id": 168,
+    "name": "Jan pur",
+    "name_ur": "جان پور",
+    "type": "City"
+  },
+  {
+    "id": 169,
+    "name": "Jand",
+    "name_ur": "Jand",
+    "type": "City"
+  },
+  {
+    "id": 170,
+    "name": "Jandanwala",
+    "name_ur": "جنڈاں والہ",
+    "type": "City"
+  },
+  {
+    "id": 171,
+    "name": "Jaranwala",
+    "name_ur": "جڑانوالہ",
+    "type": "City"
+  },
+  {
+    "id": 172,
+    "name": "Jatlaan",
+    "name_ur": "Jatlaan",
+    "type": "City"
+  },
+  {
+    "id": 173,
+    "name": "Jatoi",
+    "name_ur": "Jatoi",
+    "type": "City"
+  },
+  {
+    "id": 174,
+    "name": "Jauharabad",
+    "name_ur": "جوہر آباد",
+    "type": "City"
+  },
+  {
+    "id": 175,
+    "name": "Jehangira",
+    "name_ur": "جہانگیرہ",
+    "type": "City"
+  },
+  {
+    "id": 176,
+    "name": "Jhal Magsi",
+    "name_ur": "جھل مگسی",
+    "type": "City"
+  },
+  {
+    "id": 177,
+    "name": "Jhand",
+    "name_ur": "جھنڈ",
+    "type": "City"
+  },
+  {
+    "id": 178,
+    "name": "Jhang",
+    "name_ur": "جھنگ",
+    "type": "City"
+  },
+  {
+    "id": 179,
+    "name": "Jhatta bhutta",
+    "name_ur": "جھٹہ بھٹہ",
+    "type": "City"
+  },
+  {
+    "id": 180,
+    "name": "Jhelum",
+    "name_ur": "جہلم",
+    "type": "City"
+  },
+  {
+    "id": 181,
+    "name": "Jhudo",
+    "name_ur": "جھڈو",
+    "type": "City"
+  },
+  {
+    "id": 182,
+    "name": "Jin Pur",
+    "name_ur": "Jin Pur",
+    "type": "City"
+  },
+  {
+    "id": 183,
+    "name": "K.N. Shah",
+    "name_ur": "K.N. Shah",
+    "type": "City"
+  },
+  {
+    "id": 184,
+    "name": "Kabirwala",
+    "name_ur": "کبیر والا",
+    "type": "City"
+  },
+  {
+    "id": 185,
+    "name": "Kacha khooh",
+    "name_ur": "کچا کھوہ",
+    "type": "City"
+  },
+  {
+    "id": 186,
+    "name": "Kahuta",
+    "name_ur": "کہوٹہ",
+    "type": "City"
+  },
+  {
+    "id": 187,
+    "name": "Kakul",
+    "name_ur": "کاکول",
+    "type": "City"
+  },
+  {
+    "id": 188,
+    "name": "Kakur town",
+    "name_ur": "کاکڑ ٹاؤن",
+    "type": "City"
+  },
+  {
+    "id": 189,
+    "name": "Kala bagh",
+    "name_ur": "کالا باغ",
+    "type": "City"
+  },
+  {
+    "id": 190,
+    "name": "Kala shah kaku",
+    "name_ur": "کالا شاہ کاکو",
+    "type": "City"
+  },
+  {
+    "id": 191,
+    "name": "Kalaswala",
+    "name_ur": "کلاس والا",
+    "type": "City"
+  },
+  {
+    "id": 192,
+    "name": "Kallar Kahar",
+    "name_ur": "Kallar Kahar",
+    "type": "City"
+  },
+  {
+    "id": 193,
+    "name": "Kallar Saddiyian",
+    "name_ur": "کلر سیداں",
+    "type": "City"
+  },
+  {
+    "id": 194,
+    "name": "Kallur kot",
+    "name_ur": "کلور کوٹ",
+    "type": "City"
+  },
+  {
+    "id": 195,
+    "name": "Kamalia",
+    "name_ur": "کمالیہ",
+    "type": "City"
+  },
+  {
+    "id": 196,
+    "name": "Kamalia musa",
+    "name_ur": "کمالیہ موسیٰ",
+    "type": "City"
+  },
+  {
+    "id": 197,
+    "name": "Kamber ali khan",
+    "name_ur": "قمبر علی خان",
+    "type": "City"
+  },
+  {
+    "id": 198,
+    "name": "Kameer",
+    "name_ur": "Kameer",
+    "type": "City"
+  },
+  {
+    "id": 199,
+    "name": "Kamoke",
+    "name_ur": "کامونکے",
+    "type": "City"
+  },
+  {
+    "id": 200,
+    "name": "Kamra",
+    "name_ur": "کامرہ",
+    "type": "City"
+  },
+  {
+    "id": 201,
+    "name": "Kandh kot",
+    "name_ur": "کندھ کوٹ",
+    "type": "City"
+  },
+  {
+    "id": 202,
+    "name": "Kandiaro",
+    "name_ur": "کنڈیارو",
+    "type": "City"
+  },
+  {
+    "id": 203,
+    "name": "Karak",
+    "name_ur": "کرک",
+    "type": "City"
+  },
+  {
+    "id": 204,
+    "name": "Karoor pacca",
+    "name_ur": "کہروڑ پکا",
+    "type": "City"
+  },
+  {
+    "id": 205,
+    "name": "Karore lalisan",
+    "name_ur": "کہروڑ لعل عیسن",
+    "type": "City"
+  },
+  {
+    "id": 206,
+    "name": "Kashmir",
+    "name_ur": "کشمیر",
+    "type": "City"
+  },
+  {
+    "id": 207,
+    "name": "Kashmore",
+    "name_ur": "کشمور",
+    "type": "City"
+  },
+  {
+    "id": 208,
+    "name": "Kasur",
+    "name_ur": "قصور",
+    "type": "City"
+  },
+  {
+    "id": 209,
+    "name": "Kazi ahmed",
+    "name_ur": "قاضی احمد",
+    "type": "City"
+  },
+  {
+    "id": 210,
+    "name": "Khairpur",
+    "name_ur": "خیر پور",
+    "type": "City"
+  },
+  {
+    "id": 211,
+    "name": "Khairpur Mir",
+    "name_ur": "Khairpur Mir",
+    "type": "City"
+  },
+  {
+    "id": 212,
+    "name": "Khan Bela",
+    "name_ur": "خان بیلہ",
+    "type": "City"
+  },
+  {
+    "id": 213,
+    "name": "Khan qah sharif",
+    "name_ur": "خانقاہ شریف",
+    "type": "City"
+  },
+  {
+    "id": 214,
+    "name": "Khandabad",
+    "name_ur": "خان آباد",
+    "type": "City"
+  },
+  {
+    "id": 215,
+    "name": "Khanewal",
+    "name_ur": "خانیوال",
+    "type": "City"
+  },
+  {
+    "id": 216,
+    "name": "Khangarh",
+    "name_ur": "خان گڑھ",
+    "type": "City"
+  },
+  {
+    "id": 217,
+    "name": "Khanpur",
+    "name_ur": "خان پور",
+    "type": "City"
+  },
+  {
+    "id": 218,
+    "name": "Khanqah dogran",
+    "name_ur": "خانقاہ ڈوگراں",
+    "type": "City"
+  },
+  {
+    "id": 219,
+    "name": "Khanqah sharif",
+    "name_ur": "خانقاہ شریف",
+    "type": "City"
+  },
+  {
+    "id": 220,
+    "name": "Kharian",
+    "name_ur": "کھاریاں",
+    "type": "City"
+  },
+  {
+    "id": 221,
+    "name": "Khewra",
+    "name_ur": "کھیوڑہ",
+    "type": "City"
+  },
+  {
+    "id": 222,
+    "name": "Khoski",
+    "name_ur": "کھوسکی",
+    "type": "City"
+  },
+  {
+    "id": 223,
+    "name": "Khudian Khas",
+    "name_ur": "کھڈیاں خاص",
+    "type": "City"
+  },
+  {
+    "id": 224,
+    "name": "Khurian wala",
+    "name_ur": "کھاریاں والا",
+    "type": "City"
+  },
+  {
+    "id": 225,
+    "name": "Khurrianwala",
+    "name_ur": "Khurrianwala",
+    "type": "City"
+  },
+  {
+    "id": 226,
+    "name": "Khushab",
+    "name_ur": "خوشاب",
+    "type": "City"
+  },
+  {
+    "id": 227,
+    "name": "Khushal kot",
+    "name_ur": "خوشحال کوٹ",
+    "type": "City"
+  },
+  {
+    "id": 228,
+    "name": "Khuzdar",
+    "name_ur": "خضدار",
+    "type": "City"
+  },
+  {
+    "id": 229,
+    "name": "Khyber",
+    "name_ur": "Khyber",
+    "type": "City"
+  },
+  {
+    "id": 230,
+    "name": "Klaske",
+    "name_ur": "Klaske",
+    "type": "City"
+  },
+  {
+    "id": 231,
+    "name": "Kohat",
+    "name_ur": "کوہاٹ",
+    "type": "City"
+  },
+  {
+    "id": 232,
+    "name": "Kot addu",
+    "name_ur": "کوٹ ادو",
+    "type": "City"
+  },
+  {
+    "id": 233,
+    "name": "Kot bunglow",
+    "name_ur": "کوٹ بنگلو",
+    "type": "City"
+  },
+  {
+    "id": 234,
+    "name": "Kot ghulam mohd",
+    "name_ur": "کوٹ غلام محمد",
+    "type": "City"
+  },
+  {
+    "id": 235,
+    "name": "Kot mithan",
+    "name_ur": "کوٹ مٹھن",
+    "type": "City"
+  },
+  {
+    "id": 236,
+    "name": "Kot Momin",
+    "name_ur": "Kot Momin",
+    "type": "City"
+  },
+  {
+    "id": 237,
+    "name": "Kot radha kishan",
+    "name_ur": "کوٹ رادھا کشن",
+    "type": "City"
+  },
+  {
+    "id": 238,
+    "name": "Kotla",
+    "name_ur": "کوٹلہ",
+    "type": "City"
+  },
+  {
+    "id": 239,
+    "name": "Kotla arab ali khan",
+    "name_ur": "کوٹلہ عرب علی خان",
+    "type": "City"
+  },
+  {
+    "id": 240,
+    "name": "Kotla jam",
+    "name_ur": "کوٹلہ جام",
+    "type": "City"
+  },
+  {
+    "id": 241,
+    "name": "Kotla Pathan",
+    "name_ur": "کوٹلہ پٹھان",
+    "type": "City"
+  },
+  {
+    "id": 242,
+    "name": "Kotli Ak",
+    "name_ur": "Kotli Ak",
+    "type": "City"
+  },
+  {
+    "id": 243,
+    "name": "Kotli Loharan",
+    "name_ur": "کوٹلی لوہاراں",
+    "type": "City"
+  },
+  {
+    "id": 244,
+    "name": "Kotri",
+    "name_ur": "کوٹری",
+    "type": "City"
+  },
+  {
+    "id": 245,
+    "name": "Kumbh",
+    "name_ur": "کنب",
+    "type": "City"
+  },
+  {
+    "id": 246,
+    "name": "Kundina",
+    "name_ur": "کندیاں",
+    "type": "City"
+  },
+  {
+    "id": 247,
+    "name": "Kunjah",
+    "name_ur": "کنجاہ",
+    "type": "City"
+  },
+  {
+    "id": 248,
+    "name": "Kunri",
+    "name_ur": "کنری",
+    "type": "City"
+  },
+  {
+    "id": 249,
+    "name": "Lakki marwat",
+    "name_ur": "لکی مروت",
+    "type": "City"
+  },
+  {
+    "id": 250,
+    "name": "Lala musa",
+    "name_ur": "لالہ موسیٰ",
+    "type": "City"
+  },
+  {
+    "id": 251,
+    "name": "Lala rukh",
+    "name_ur": "لالہ رخ",
+    "type": "City"
+  },
+  {
+    "id": 252,
+    "name": "Laliah",
+    "name_ur": "لالیاں",
+    "type": "City"
+  },
+  {
+    "id": 253,
+    "name": "Lalshanra",
+    "name_ur": "لال سوہانرا",
+    "type": "City"
+  },
+  {
+    "id": 254,
+    "name": "Larkana",
+    "name_ur": "لاڑکانہ",
+    "type": "City"
+  },
+  {
+    "id": 255,
+    "name": "Lasbela",
+    "name_ur": "لسبیلہ",
+    "type": "City"
+  },
+  {
+    "id": 256,
+    "name": "Lawrence pur",
+    "name_ur": "لارنس پور",
+    "type": "City"
+  },
+  {
+    "id": 257,
+    "name": "Layyah",
+    "name_ur": "لیہ",
+    "type": "City"
+  },
+  {
+    "id": 258,
+    "name": "Liaqat Pur",
+    "name_ur": "لیاقت پور",
+    "type": "City"
+  },
+  {
+    "id": 259,
+    "name": "Lodhran",
+    "name_ur": "لودھراں",
+    "type": "City"
+  },
+  {
+    "id": 260,
+    "name": "Lower Dir",
+    "name_ur": "دیر زیریں",
+    "type": "City"
+  },
+  {
+    "id": 261,
+    "name": "Ludhan",
+    "name_ur": "لدھاں",
+    "type": "City"
+  },
+  {
+    "id": 262,
+    "name": "Makli",
+    "name_ur": "مکلی",
+    "type": "City"
+  },
+  {
+    "id": 263,
+    "name": "Malakand Agency",
+    "name_ur": "مالاکنڈ ایجنسی",
+    "type": "City"
+  },
+  {
+    "id": 264,
+    "name": "Malakwal",
+    "name_ur": "ملکوال",
+    "type": "City"
+  },
+  {
+    "id": 265,
+    "name": "Mamu kunjan",
+    "name_ur": "ماموں کانجن",
+    "type": "City"
+  },
+  {
+    "id": 266,
+    "name": "Mandi bahauddin",
+    "name_ur": "منڈی بہاؤ الدین",
+    "type": "City"
+  },
+  {
+    "id": 267,
+    "name": "Mandra",
+    "name_ur": "مندرہ",
+    "type": "City"
+  },
+  {
+    "id": 268,
+    "name": "Manga mandi",
+    "name_ur": "مانگا منڈی",
+    "type": "City"
+  },
+  {
+    "id": 269,
+    "name": "Mangal sada",
+    "name_ur": "منگل سیداں",
+    "type": "City"
+  },
+  {
+    "id": 270,
+    "name": "Mangi",
+    "name_ur": "منگی",
+    "type": "City"
+  },
+  {
+    "id": 271,
+    "name": "Mangla",
+    "name_ur": "منگلا",
+    "type": "City"
+  },
+  {
+    "id": 272,
+    "name": "Mangowal",
+    "name_ur": "منگووال",
+    "type": "City"
+  },
+  {
+    "id": 273,
+    "name": "Manoabad",
+    "name_ur": "منو آباد",
+    "type": "City"
+  },
+  {
+    "id": 274,
+    "name": "Mansehra",
+    "name_ur": "مانسہرہ",
+    "type": "City"
+  },
+  {
+    "id": 275,
+    "name": "Mardan",
+    "name_ur": "مردان",
+    "type": "City"
+  },
+  {
+    "id": 276,
+    "name": "Mari indus",
+    "name_ur": "ماڑی انڈس",
+    "type": "City"
+  },
+  {
+    "id": 277,
+    "name": "Mastoi",
+    "name_ur": "مستوئی",
+    "type": "City"
+  },
+  {
+    "id": 278,
+    "name": "Matli",
+    "name_ur": "ماتلی",
+    "type": "City"
+  },
+  {
+    "id": 279,
+    "name": "Mehar",
+    "name_ur": "میہڑ",
+    "type": "City"
+  },
+  {
+    "id": 280,
+    "name": "Mehmood kot",
+    "name_ur": "محمود کوٹ",
+    "type": "City"
+  },
+  {
+    "id": 281,
+    "name": "Mehrabpur",
+    "name_ur": "محراب پور",
+    "type": "City"
+  },
+  {
+    "id": 282,
+    "name": "Melsi",
+    "name_ur": "میلسی",
+    "type": "City"
+  },
+  {
+    "id": 283,
+    "name": "Mian Channu",
+    "name_ur": "میاں چنوں",
+    "type": "City"
+  },
+  {
+    "id": 284,
+    "name": "Mian Wali",
+    "name_ur": "میانوالی",
+    "type": "City"
+  },
+  {
+    "id": 285,
+    "name": "Minchanabad",
+    "name_ur": "Minchanabad",
+    "type": "City"
+  },
+  {
+    "id": 286,
+    "name": "Mingora",
+    "name_ur": "مینگورہ",
+    "type": "City"
+  },
+  {
+    "id": 287,
+    "name": "Mir ali",
+    "name_ur": "میر علی",
+    "type": "City"
+  },
+  {
+    "id": 288,
+    "name": "Miran shah",
+    "name_ur": "میران شاہ",
+    "type": "City"
+  },
+  {
+    "id": 289,
+    "name": "Mirpur A.K.",
+    "name_ur": "میرپور",
+    "type": "City"
+  },
+  {
+    "id": 290,
+    "name": "Mirpur khas",
+    "name_ur": "میر پور خاص",
+    "type": "City"
+  },
+  {
+    "id": 291,
+    "name": "Mirpur mathelo",
+    "name_ur": "میرپور ماتھیلو",
+    "type": "City"
+  },
+  {
+    "id": 292,
+    "name": "Mithi",
+    "name_ur": "Mithi",
+    "type": "City"
+  },
+  {
+    "id": 293,
+    "name": "Mitiari",
+    "name_ur": "مٹیاری",
+    "type": "City"
+  },
+  {
+    "id": 294,
+    "name": "Mohen jo daro",
+    "name_ur": "موئن جو دڑو",
+    "type": "City"
+  },
+  {
+    "id": 295,
+    "name": "More kunda",
+    "name_ur": "موڑ کھنڈا",
+    "type": "City"
+  },
+  {
+    "id": 296,
+    "name": "Morgah",
+    "name_ur": "مورگاہ",
+    "type": "City"
+  },
+  {
+    "id": 297,
+    "name": "Moro",
+    "name_ur": "مورو",
+    "type": "City"
+  },
+  {
+    "id": 298,
+    "name": "Mubarik pur",
+    "name_ur": "مبارک پور",
+    "type": "City"
+  },
+  {
+    "id": 299,
+    "name": "Multan",
+    "name_ur": "ملتان",
+    "type": "City"
+  },
+  {
+    "id": 300,
+    "name": "Muridke",
+    "name_ur": "مریدکے",
+    "type": "City"
+  },
+  {
+    "id": 301,
+    "name": "Murree",
+    "name_ur": "مری",
+    "type": "City"
+  },
+  {
+    "id": 302,
+    "name": "Musafir khana",
+    "name_ur": "مسافر خانہ",
+    "type": "City"
+  },
+  {
+    "id": 303,
+    "name": "Mustung",
+    "name_ur": "مستونگ",
+    "type": "City"
+  },
+  {
+    "id": 304,
+    "name": "Muzaffar Gargh",
+    "name_ur": "مظفرگڑھ",
+    "type": "City"
+  },
+  {
+    "id": 305,
+    "name": "Muzaffarabad",
+    "name_ur": "مظفرآباد",
+    "type": "City"
+  },
+  {
+    "id": 306,
+    "name": "Nankana sahib",
+    "name_ur": "ننکانہ صاحب",
+    "type": "City"
+  },
+  {
+    "id": 307,
+    "name": "Narang mandi",
+    "name_ur": "نارنگ منڈی",
+    "type": "City"
+  },
+  {
+    "id": 308,
+    "name": "Narowal",
+    "name_ur": "نارووال",
+    "type": "City"
+  },
+  {
+    "id": 309,
+    "name": "Naseerabad",
+    "name_ur": "نصیر آباد",
+    "type": "City"
+  },
+  {
+    "id": 310,
+    "name": "Naukot",
+    "name_ur": "نوکوٹ",
+    "type": "City"
+  },
+  {
+    "id": 311,
+    "name": "Naukundi",
+    "name_ur": "نوکنڈی",
+    "type": "City"
+  },
+  {
+    "id": 312,
+    "name": "Nawabshah",
+    "name_ur": "نواب شاہ",
+    "type": "City"
+  },
+  {
+    "id": 313,
+    "name": "New saeedabad",
+    "name_ur": "نیو سعید آباد",
+    "type": "City"
+  },
+  {
+    "id": 314,
+    "name": "Nilore",
+    "name_ur": "نیلور",
+    "type": "City"
+  },
+  {
+    "id": 315,
+    "name": "Noor kot",
+    "name_ur": "نورکوٹ",
+    "type": "City"
+  },
+  {
+    "id": 316,
+    "name": "Nooriabad",
+    "name_ur": "Nooriabad",
+    "type": "City"
+  },
+  {
+    "id": 317,
+    "name": "Noorpur nooranga",
+    "name_ur": "نورپور",
+    "type": "City"
+  },
+  {
+    "id": 318,
+    "name": "Noshero Feroze",
+    "name_ur": "نوشہرو فیروز",
+    "type": "City"
+  },
+  {
+    "id": 319,
+    "name": "Noudero",
+    "name_ur": "نودیرو",
+    "type": "City"
+  },
+  {
+    "id": 320,
+    "name": "Nowshera",
+    "name_ur": "نوشہرہ",
+    "type": "City"
+  },
+  {
+    "id": 321,
+    "name": "Nowshera cantt",
+    "name_ur": "نوشہرہ کینٹ",
+    "type": "City"
+  },
+  {
+    "id": 322,
+    "name": "Nowshera Virka",
+    "name_ur": "Nowshera Virka",
+    "type": "City"
+  },
+  {
+    "id": 323,
+    "name": "Okara",
+    "name_ur": "اوکاڑہ",
+    "type": "City"
+  },
+  {
+    "id": 324,
+    "name": "Other",
+    "name_ur": "دیگر",
+    "type": "City"
+  },
+  {
+    "id": 325,
+    "name": "Padidan",
+    "name_ur": "پڈعیدن",
+    "type": "City"
+  },
+  {
+    "id": 326,
+    "name": "Pak china fertilizer",
+    "name_ur": "پاک چین فرٹیلائزر",
+    "type": "City"
+  },
+  {
+    "id": 327,
+    "name": "Pak pattan sharif",
+    "name_ur": "پاک پتن شریف",
+    "type": "City"
+  },
+  {
+    "id": 328,
+    "name": "Panjan kisan",
+    "name_ur": "پنجن کساں",
+    "type": "City"
+  },
+  {
+    "id": 329,
+    "name": "Panjgoor",
+    "name_ur": "پنجگور",
+    "type": "City"
+  },
+  {
+    "id": 330,
+    "name": "Pano Aqil",
+    "name_ur": "پنوعاقل",
+    "type": "City"
+  },
+  {
+    "id": 331,
+    "name": "Pano Aqil",
+    "name_ur": "پنوعاقل",
+    "type": "City"
+  },
+  {
+    "id": 332,
+    "name": "Pasni",
+    "name_ur": "پسنی",
+    "type": "City"
+  },
+  {
+    "id": 333,
+    "name": "Pasrur",
+    "name_ur": "پسرور",
+    "type": "City"
+  },
+  {
+    "id": 334,
+    "name": "Pattoki",
+    "name_ur": "پتوکی",
+    "type": "City"
+  },
+  {
+    "id": 335,
+    "name": "Phagwar",
+    "name_ur": "پھگواری",
+    "type": "City"
+  },
+  {
+    "id": 336,
+    "name": "Phalia",
+    "name_ur": "پھالیہ",
+    "type": "City"
+  },
+  {
+    "id": 337,
+    "name": "Phool nagar",
+    "name_ur": "پھول نگر",
+    "type": "City"
+  },
+  {
+    "id": 338,
+    "name": "Piaro goth",
+    "name_ur": "پیارو گوٹھ",
+    "type": "City"
+  },
+  {
+    "id": 339,
+    "name": "Pind Dadan Khan",
+    "name_ur": "پنڈ دادن خان",
+    "type": "City"
+  },
+  {
+    "id": 340,
+    "name": "Pindi Bhattian",
+    "name_ur": "Pindi Bhattian",
+    "type": "City"
+  },
+  {
+    "id": 341,
+    "name": "Pindi bohri",
+    "name_ur": "پنڈی بھٹیاں",
+    "type": "City"
+  },
+  {
+    "id": 342,
+    "name": "Pindi gheb",
+    "name_ur": "پنڈی گھیب",
+    "type": "City"
+  },
+  {
+    "id": 343,
+    "name": "Piplan",
+    "name_ur": "Piplan",
+    "type": "City"
+  },
+  {
+    "id": 344,
+    "name": "Pir mahal",
+    "name_ur": "پیر محل",
+    "type": "City"
+  },
+  {
+    "id": 345,
+    "name": "Pishin",
+    "name_ur": "پشین",
+    "type": "City"
+  },
+  {
+    "id": 346,
+    "name": "Qalandarabad",
+    "name_ur": "قلندرآباد",
+    "type": "City"
+  },
+  {
+    "id": 347,
+    "name": "Qamber Ali Khan",
+    "name_ur": "Qamber Ali Khan",
+    "type": "City"
+  },
+  {
+    "id": 348,
+    "name": "Qasba gujrat",
+    "name_ur": "قصبہ گجرات",
+    "type": "City"
+  },
+  {
+    "id": 349,
+    "name": "Qazi ahmed",
+    "name_ur": "قاضی احمد",
+    "type": "City"
+  },
+  {
+    "id": 350,
+    "name": "Qila Deedar Singh",
+    "name_ur": "Qila Deedar Singh",
+    "type": "City"
+  },
+  {
+    "id": 351,
+    "name": "Quaid Abad",
+    "name_ur": "قائد آباد",
+    "type": "City"
+  },
+  {
+    "id": 352,
+    "name": "Quetta",
+    "name_ur": "کوئٹہ",
+    "type": "City"
+  },
+  {
+    "id": 353,
+    "name": "Rahim Yar Khan",
+    "name_ur": "رحیم یار خان",
+    "type": "City"
+  },
+  {
+    "id": 354,
+    "name": "Rahwali",
+    "name_ur": "راہوالی",
+    "type": "City"
+  },
+  {
+    "id": 355,
+    "name": "Raiwind",
+    "name_ur": "رائے ونڈ",
+    "type": "City"
+  },
+  {
+    "id": 356,
+    "name": "Rajana",
+    "name_ur": "رجانہ",
+    "type": "City"
+  },
+  {
+    "id": 357,
+    "name": "Rajanpur",
+    "name_ur": "راجن پور",
+    "type": "City"
+  },
+  {
+    "id": 358,
+    "name": "Rangoo",
+    "name_ur": "رنگو",
+    "type": "City"
+  },
+  {
+    "id": 359,
+    "name": "Ranipur",
+    "name_ur": "رانی پور",
+    "type": "City"
+  },
+  {
+    "id": 360,
+    "name": "Rato Dero",
+    "name_ur": "رتودیرو",
+    "type": "City"
+  },
+  {
+    "id": 361,
+    "name": "Rawalakot",
+    "name_ur": "راولاکوٹ",
+    "type": "City"
+  },
+  {
+    "id": 362,
+    "name": "Rawat",
+    "name_ur": "روات",
+    "type": "City"
+  },
+  {
+    "id": 363,
+    "name": "Renala khurd",
+    "name_ur": "رینالہ خورد",
+    "type": "City"
+  },
+  {
+    "id": 364,
+    "name": "Risalpur",
+    "name_ur": "رسالپور",
+    "type": "City"
+  },
+  {
+    "id": 365,
+    "name": "Rohri",
+    "name_ur": "روہڑی",
+    "type": "City"
+  },
+  {
+    "id": 366,
+    "name": "Sadiqabad",
+    "name_ur": "صادق آباد",
+    "type": "City"
+  },
+  {
+    "id": 367,
+    "name": "Sagri",
+    "name_ur": "ساگری",
+    "type": "City"
+  },
+  {
+    "id": 368,
+    "name": "Sahiwal",
+    "name_ur": "ساہیوال",
+    "type": "City"
+  },
+  {
+    "id": 369,
+    "name": "Saidu sharif",
+    "name_ur": "سیدو شریف",
+    "type": "City"
+  },
+  {
+    "id": 370,
+    "name": "Sajawal",
+    "name_ur": "سجاول",
+    "type": "City"
+  },
+  {
+    "id": 371,
+    "name": "Sakhi Sarwar",
+    "name_ur": "Sakhi Sarwar",
+    "type": "City"
+  },
+  {
+    "id": 372,
+    "name": "Samanabad",
+    "name_ur": "سمن آباد",
+    "type": "City"
+  },
+  {
+    "id": 373,
+    "name": "Sambrial",
+    "name_ur": "سمبڑیال",
+    "type": "City"
+  },
+  {
+    "id": 374,
+    "name": "Samma satta",
+    "name_ur": "سمہ سٹہ",
+    "type": "City"
+  },
+  {
+    "id": 375,
+    "name": "Sanghar",
+    "name_ur": "سانگھڑ",
+    "type": "City"
+  },
+  {
+    "id": 376,
+    "name": "Sanghi",
+    "name_ur": "سانگی",
+    "type": "City"
+  },
+  {
+    "id": 377,
+    "name": "Sangla Hills",
+    "name_ur": "سانگلہ ہل",
+    "type": "City"
+  },
+  {
+    "id": 378,
+    "name": "Sangote",
+    "name_ur": "سنگوٹ",
+    "type": "City"
+  },
+  {
+    "id": 379,
+    "name": "Sanjarpur",
+    "name_ur": "Sanjarpur",
+    "type": "City"
+  },
+  {
+    "id": 380,
+    "name": "Sanjwal",
+    "name_ur": "سنجوال",
+    "type": "City"
+  },
+  {
+    "id": 381,
+    "name": "Sara e naurang",
+    "name_ur": "سرائے نورنگ",
+    "type": "City"
+  },
+  {
+    "id": 382,
+    "name": "Sara-E-Alamgir",
+    "name_ur": "سرائے عالمگیر",
+    "type": "City"
+  },
+  {
+    "id": 383,
+    "name": "Sarai alamgir",
+    "name_ur": "سرائے عالمگیر",
+    "type": "City"
+  },
+  {
+    "id": 384,
+    "name": "Sargodha",
+    "name_ur": "سرگودھا",
+    "type": "City"
+  },
+  {
+    "id": 385,
+    "name": "Satiana",
+    "name_ur": "ستیانہ بنگلہ",
+    "type": "City"
+  },
+  {
+    "id": 386,
+    "name": "Sehar baqlas",
+    "name_ur": "سحر بگلہ",
+    "type": "City"
+  },
+  {
+    "id": 387,
+    "name": "Sehwan Sharif",
+    "name_ur": "Sehwan Sharif",
+    "type": "City"
+  },
+  {
+    "id": 388,
+    "name": "Sekhat",
+    "name_ur": "Sekhat",
+    "type": "City"
+  },
+  {
+    "id": 389,
+    "name": "Shadiwal",
+    "name_ur": "شادی وال",
+    "type": "City"
+  },
+  {
+    "id": 390,
+    "name": "Shah kot",
+    "name_ur": "شاہ کوٹ",
+    "type": "City"
+  },
+  {
+    "id": 391,
+    "name": "Shahdad kot",
+    "name_ur": "شہداد کوٹ",
+    "type": "City"
+  },
+  {
+    "id": 392,
+    "name": "Shahdadpur",
+    "name_ur": "شہداد پور",
+    "type": "City"
+  },
+  {
+    "id": 393,
+    "name": "Shahdara",
+    "name_ur": "Shahdara",
+    "type": "City"
+  },
+  {
+    "id": 394,
+    "name": "Shahpur chakar",
+    "name_ur": "شاہ پور چاکر",
+    "type": "City"
+  },
+  {
+    "id": 395,
+    "name": "Shahpur Saddar",
+    "name_ur": "Shahpur Saddar",
+    "type": "City"
+  },
+  {
+    "id": 396,
+    "name": "Shakargarh",
+    "name_ur": "Shakargarh",
+    "type": "City"
+  },
+  {
+    "id": 397,
+    "name": "Shamsabad",
+    "name_ur": "شمس آباد",
+    "type": "City"
+  },
+  {
+    "id": 398,
+    "name": "Shankiari",
+    "name_ur": "شنکیاری",
+    "type": "City"
+  },
+  {
+    "id": 399,
+    "name": "Shedani sharif",
+    "name_ur": "شیدانی شریف",
+    "type": "City"
+  },
+  {
+    "id": 400,
+    "name": "Sheikhupura",
+    "name_ur": "شیخوپورہ",
+    "type": "City"
+  },
+  {
+    "id": 401,
+    "name": "Sheikhupura",
+    "name_ur": "شیخوپورہ",
+    "type": "City"
+  },
+  {
+    "id": 402,
+    "name": "Shemier",
+    "name_ur": "شمر",
+    "type": "City"
+  },
+  {
+    "id": 403,
+    "name": "Shikar pur",
+    "name_ur": "شکار پور",
+    "type": "City"
+  },
+  {
+    "id": 404,
+    "name": "Shorkot",
+    "name_ur": "شورکوٹ",
+    "type": "City"
+  },
+  {
+    "id": 405,
+    "name": "Shorkot Cantt",
+    "name_ur": "Shorkot Cantt",
+    "type": "City"
+  },
+  {
+    "id": 406,
+    "name": "Shuja Abad",
+    "name_ur": "شجاع آباد",
+    "type": "City"
+  },
+  {
+    "id": 407,
+    "name": "Sialkot",
+    "name_ur": "سیالکوٹ",
+    "type": "City"
+  },
+  {
+    "id": 408,
+    "name": "Sibi",
+    "name_ur": "سبی",
+    "type": "City"
+  },
+  {
+    "id": 409,
+    "name": "Sihala",
+    "name_ur": "سہالا",
+    "type": "City"
+  },
+  {
+    "id": 410,
+    "name": "Sikandarabad",
+    "name_ur": "سکندرآباد",
+    "type": "City"
+  },
+  {
+    "id": 411,
+    "name": "Sillanwali",
+    "name_ur": "سلانوالی",
+    "type": "City"
+  },
+  {
+    "id": 412,
+    "name": "Sita road",
+    "name_ur": "سیتا روڈ",
+    "type": "City"
+  },
+  {
+    "id": 413,
+    "name": "Skardu",
+    "name_ur": "اسکردو",
+    "type": "City"
+  },
+  {
+    "id": 414,
+    "name": "Skrand",
+    "name_ur": "سکرنڈ",
+    "type": "City"
+  },
+  {
+    "id": 415,
+    "name": "Sohawa",
+    "name_ur": "سوہاوہ ضلع جہلم",
+    "type": "City"
+  },
+  {
+    "id": 416,
+    "name": "Sohawa district daska",
+    "name_ur": "سوہاوہ ضلع ڈسکہ",
+    "type": "City"
+  },
+  {
+    "id": 417,
+    "name": "Sukkur",
+    "name_ur": "سکھر",
+    "type": "City"
+  },
+  {
+    "id": 418,
+    "name": "Sumandari",
+    "name_ur": "سمندری",
+    "type": "City"
+  },
+  {
+    "id": 419,
+    "name": "Swabi",
+    "name_ur": "صوابی",
+    "type": "City"
+  },
+  {
+    "id": 420,
+    "name": "Swat",
+    "name_ur": "سوات",
+    "type": "City"
+  },
+  {
+    "id": 421,
+    "name": "Swatmingora",
+    "name_ur": "سوات مینگورہ",
+    "type": "City"
+  },
+  {
+    "id": 422,
+    "name": "Takhtbai",
+    "name_ur": "تخت بائی",
+    "type": "City"
+  },
+  {
+    "id": 423,
+    "name": "Talagang",
+    "name_ur": "تلہ گنگ",
+    "type": "City"
+  },
+  {
+    "id": 424,
+    "name": "Talamba",
+    "name_ur": "تلمبہ",
+    "type": "City"
+  },
+  {
+    "id": 425,
+    "name": "Talhur",
+    "name_ur": "تلہار",
+    "type": "City"
+  },
+  {
+    "id": 426,
+    "name": "Tandiliyawala",
+    "name_ur": "Tandiliyawala",
+    "type": "City"
+  },
+  {
+    "id": 427,
+    "name": "Tando adam",
+    "name_ur": "ٹنڈو آدم",
+    "type": "City"
+  },
+  {
+    "id": 428,
+    "name": "Tando Allah Yar",
+    "name_ur": "ٹنڈو الہ یار",
+    "type": "City"
+  },
+  {
+    "id": 429,
+    "name": "Tando jam",
+    "name_ur": "ٹنڈو جام",
+    "type": "City"
+  },
+  {
+    "id": 430,
+    "name": "Tando Muhammad Khan",
+    "name_ur": "ٹنڈو محمد خان",
+    "type": "City"
+  },
+  {
+    "id": 431,
+    "name": "Tank",
+    "name_ur": "ٹانک",
+    "type": "City"
+  },
+  {
+    "id": 432,
+    "name": "Tarbela",
+    "name_ur": "تربیلا",
+    "type": "City"
+  },
+  {
+    "id": 433,
+    "name": "Tarmatan",
+    "name_ur": "ترماتن",
+    "type": "City"
+  },
+  {
+    "id": 434,
+    "name": "Tatlay Wali",
+    "name_ur": "Tatlay Wali",
+    "type": "City"
+  },
+  {
+    "id": 435,
+    "name": "Taunsa sharif",
+    "name_ur": "تونسہ شریف",
+    "type": "City"
+  },
+  {
+    "id": 436,
+    "name": "Taxila",
+    "name_ur": "ٹیکسلا",
+    "type": "City"
+  },
+  {
+    "id": 437,
+    "name": "Tharo shah",
+    "name_ur": "ٹھارو شاہ",
+    "type": "City"
+  },
+  {
+    "id": 438,
+    "name": "Thatta",
+    "name_ur": "ٹھٹہ",
+    "type": "City"
+  },
+  {
+    "id": 439,
+    "name": "Theing jattan more",
+    "name_ur": "تھینگ جٹاں",
+    "type": "City"
+  },
+  {
+    "id": 440,
+    "name": "Thull",
+    "name_ur": "ٹھل",
+    "type": "City"
+  },
+  {
+    "id": 441,
+    "name": "Tibba sultanpur",
+    "name_ur": "ٹبہ سلطان پور",
+    "type": "City"
+  },
+  {
+    "id": 442,
+    "name": "Toba Tek Singh",
+    "name_ur": "ٹوبہ ٹیک سنگھ",
+    "type": "City"
+  },
+  {
+    "id": 443,
+    "name": "Topi",
+    "name_ur": "ٹوپی",
+    "type": "City"
+  },
+  {
+    "id": 444,
+    "name": "Toru",
+    "name_ur": "طورو",
+    "type": "City"
+  },
+  {
+    "id": 445,
+    "name": "Tranda Muhammad Pannah",
+    "name_ur": "ترنڈہ محمد پناہ",
+    "type": "City"
+  },
+  {
+    "id": 446,
+    "name": "Turbat",
+    "name_ur": "تربت",
+    "type": "City"
+  },
+  {
+    "id": 447,
+    "name": "Ubaro",
+    "name_ur": "اوباوڑو",
+    "type": "City"
+  },
+  {
+    "id": 448,
+    "name": "Ubauro",
+    "name_ur": "اوباوڑو",
+    "type": "City"
+  },
+  {
+    "id": 449,
+    "name": "Ugoke",
+    "name_ur": "اگوکی",
+    "type": "City"
+  },
+  {
+    "id": 450,
+    "name": "Ukba",
+    "name_ur": "عقبہ",
+    "type": "City"
+  },
+  {
+    "id": 451,
+    "name": "Umer Kot",
+    "name_ur": "عمر کوٹ",
+    "type": "City"
+  },
+  {
+    "id": 452,
+    "name": "Upper deval",
+    "name_ur": "اوپر دیول",
+    "type": "City"
+  },
+  {
+    "id": 453,
+    "name": "Usta Muhammad",
+    "name_ur": "اوستہ محمد",
+    "type": "City"
+  },
+  {
+    "id": 454,
+    "name": "Vehari",
+    "name_ur": "وہاڑی",
+    "type": "City"
+  },
+  {
+    "id": 455,
+    "name": "Village Sunder",
+    "name_ur": "گاؤں سندر",
+    "type": "City"
+  },
+  {
+    "id": 456,
+    "name": "Wah cantt",
+    "name_ur": "واہ کینٹ",
+    "type": "City"
+  },
+  {
+    "id": 457,
+    "name": "Wahi hassain",
+    "name_ur": "واہی حسین",
+    "type": "City"
+  },
+  {
+    "id": 458,
+    "name": "Wahn Bachran",
+    "name_ur": "Wahn Bachran",
+    "type": "City"
+  },
+  {
+    "id": 459,
+    "name": "Wan radha ram",
+    "name_ur": "واں رادھا رام",
+    "type": "City"
+  },
+  {
+    "id": 460,
+    "name": "Warah",
+    "name_ur": "وارہ",
+    "type": "City"
+  },
+  {
+    "id": 461,
+    "name": "Warburton",
+    "name_ur": "واربرٹن",
+    "type": "City"
+  },
+  {
+    "id": 462,
+    "name": "Wazirabad",
+    "name_ur": "وزیرآباد",
+    "type": "City"
+  },
+  {
+    "id": 463,
+    "name": "Yazman mandi",
+    "name_ur": "یزمان منڈی",
+    "type": "City"
+  },
+  {
+    "id": 464,
+    "name": "Zafarwal",
+    "name_ur": "Zafarwal",
+    "type": "City"
+  },
+  {
+    "id": 465,
+    "name": "Zahir Peer",
+    "name_ur": "ظاہر پیر",
+    "type": "City"
+  },
+  {
+    "id": 2,
+    "name": "Punjab",
+    "name_ur": "Punjab",
+    "type": "Province"
+  },
+  {
+    "id": 3,
+    "name": "Sindh",
+    "name_ur": "Sindh",
+    "type": "Province"
+  }
+]

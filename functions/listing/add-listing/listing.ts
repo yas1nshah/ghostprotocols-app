@@ -1,9 +1,70 @@
 
 import { URLs } from "@/constants/Urls";
+import { AddListingState, useAddListingStore } from "@/hooks/useAddCar";
 import axios from "axios";
 import * as ImagePicker from "expo-image-picker";
 import * as SecureStore from 'expo-secure-store';
 
+export const postListing = async(form: AddListingState) => {
+  // const form = useAddListingStore()
+  // if(form.validate()) return
+  try {
+    const token = await SecureStore.getItemAsync('auth_token');
+      if (!token) {
+        throw new Error('API key not found');
+      }
+    // Make the POST request
+      const response = await axios.post(URLs.listing.post, {
+        gallery : form.gallery,
+        make: form.make,
+        model: form.model,
+        version: form.version,
+        year: form.year,
+        price: form.price,
+        registration: form.registration,
+        city: form.city,
+        mileage: form.mileage.toString(),
+        transmission: form.transmission,
+        fueltype: form.fuelType,
+        engine_capacity: form.engineCapacity,
+        body_type: form.bodyType,
+        color: form.color,
+        details: form.details,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+      });
+      return response.data;
+
+  } catch (error: any){
+    if (error.response) {
+      const { status, data } = error.response;
+      console.log(data)
+
+      if (status === 500) {
+        // Handle 500 Internal Server Error
+      
+        const errorMessage = 'An internal server error occurred';
+        throw new Error(errorMessage);
+      }
+
+      if (status === 422) {
+        // Handle 422 Unprocessable Entity
+ 
+        const errorMessages = data.error;
+        // Flatten and join error messages
+        const formattedMessages = Object.values(errorMessages).flat().join(' ');
+        throw new Error(formattedMessages || 'Validation failed');
+      }
+    }
+
+    // Handle network or other errors
+    throw new Error(error.message || 'An error occurred during signup');
+  }
+}
 
 export const uploadImage = async (imageAsset: ImagePicker.ImagePickerAsset) => {
     try {

@@ -2,7 +2,7 @@ export const baseUrl = "http://10.0.2.2:4000";
 
 
 export const URLs = {
-    register : `${baseUrl}/v1/users/register/`,
+    register : `${baseUrl}/v1/users/register`,
     authenticate : `${baseUrl}/v1/users/authentication`,
     getUserDetilas : `${baseUrl}/v1/users/getDetails`,
     user: {
@@ -13,6 +13,7 @@ export const URLs = {
         profile : `${baseUrl}/media/user-profile/`
     },
     listing: {
+        post: `${baseUrl}/v1/listings`,
         uploadImage: `${baseUrl}/v1/gallery`
     }
 }

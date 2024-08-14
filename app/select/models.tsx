@@ -1,17 +1,16 @@
-import React, { useCallback, useRef, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 import { FlashList, ListRenderItem } from '@shopify/flash-list';
 import useThemeColors from '@/hooks/useThemeColors';
-import useSignUp from '@/hooks/useSignUp';
-import BottomSheet, { BottomSheetView } from '@gorhom/bottom-sheet';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import useCityStore from '@/hooks/data/useCityStore';
+import { useModelStore } from '@/hooks/data/useModelStore';
+import { useMakeStore } from '@/hooks/data/useMakeStore';
 
-interface City {
+interface Model {
   id: number;
   name: string;
   name_ur: string;
-  popular: boolean;
+  make_id: number;
 }
 
 interface SectionHeader {
@@ -19,20 +18,20 @@ interface SectionHeader {
   isHeader: true;
 }
 
-interface SectionItem extends City {
+interface SectionItem extends Model {
   isHeader: false;
 }
 
 type ListItem = SectionHeader | SectionItem;
 
-const SelectCities: React.FC = () => {
+const SelectModels: React.FC = () => {
   const colors = useThemeColors();
-  const signup = useSignUp();
-  const bottomSheetRef = useRef<BottomSheet>(null);
-  const { filteredCities, searchText, setSearchText, filterCities } = useCityStore();
+  const { models, searchText, setSearchText, filterModels } = useModelStore();
+  const { makes, getMakeById } = useMakeStore();
+  const [flattenedData, setFlattenedData] = useState<ListItem[]>([]);
 
   useEffect(() => {
-    filterCities();
+    filterModels();
   }, [searchText]);
 
   const handleSearch = (text: string) => {
@@ -65,43 +64,66 @@ const SelectCities: React.FC = () => {
       );
     }
     return (
-      <TouchableOpacity 
-        onPress={() => signup.updateCity(item.id)}
-        className="p-2 border-b border-light-muted dark:border-dark-muted">
+      <TouchableOpacity className="p-2 border-b border-light-muted dark:border-dark-muted">
         {renderHighlightedText(item.name, searchText)}
       </TouchableOpacity>
     );
   };
 
-  const sections = [
-    { title: 'Popular Cities', data: filteredCities.filter(city => city.popular) },
-    { title: 'Other Cities', data: filteredCities.filter(city => !city.popular) },
-  ].filter(section => section.data.length > 0); // Remove empty sections
+  const filterMakesAndModels = (text: string) => {
+    const searchWords = text.toLowerCase().split(' ');
 
-  const flattenedData: ListItem[] = sections.reduce((acc, section) => {
-    acc.push({ title: section.title, isHeader: true });
-    return acc.concat(section.data.map(item => ({ ...item, isHeader: false })));
-  }, [] as ListItem[]);
+    const filteredModels = models.filter((model) => {
+      const make = getMakeById(model.make_id);
+      return (
+        make &&
+        searchWords.every((word) =>
+          make.name.toLowerCase().includes(word) || model.name.toLowerCase().includes(word)
+        )
+      );
+    });
 
+    return filteredModels;
+  };
+
+  useEffect(() => {
+    const filteredResults = searchText ? filterMakesAndModels(searchText) : models;
+
+    const sections = makes
+      .sort((a, b) => a.name.localeCompare(b.name)) // Sort makes alphabetically
+      .map((make) => ({
+        title: make.name,
+        data: filteredResults.filter((model) => model.make_id === make.id),
+      }))
+      .filter((section) => section.data.length > 0); // Remove empty sections
+
+    const flattenedData = sections.reduce((acc, section) => {
+      acc.push({ title: section.title, isHeader: true });
+      return acc.concat(section.data.map((item) => ({ ...item, isHeader: false })));
+    }, [] as ListItem[]);
+
+    setFlattenedData(flattenedData);
+  }, [searchText, models, makes]);
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <View className="p-4 h-full bg-light-background dark:bg-dark-background">
-        <Text>{signup.city}</Text>
         <TextInput
           className="h-10 border rounded-xl bg-light-background dark:bg-dark-background border-light-muted dark:border-dark-muted text-light-foreground dark:text-dark-foreground mb-4 px-2"
-          placeholder="Search cities"
+          placeholder="Search models"
           value={searchText}
           onChangeText={handleSearch}
         />
         <FlashList
+          key={flattenedData.length} // Force re-render when data changes
           data={flattenedData}
           renderItem={renderItem}
-          keyExtractor={item => (item.isHeader ? item.title : item.id.toString())}
+          keyExtractor={(item) => (item.isHeader ? item.title : item.id.toString())}
           estimatedItemSize={50}
-          stickyHeaderIndices={flattenedData.map((item, index) => (item.isHeader ? index : null)).filter(index => index !== null) as number[]}
+          stickyHeaderIndices={flattenedData
+            .map((item, index) => (item.isHeader ? index : null))
+            .filter((index) => index !== null) as number[]}
         />
-        
       </View>
     </GestureHandlerRootView>
   );
@@ -126,4 +148,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SelectCities;
+export default SelectModels;

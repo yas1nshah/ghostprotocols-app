@@ -145,32 +145,10 @@ const AddListingScreen = () => {
           <ThemedText type={imgData.length !== 0 ? "content" : "subheading"} content='Choose Your Images' />
         </TouchableOpacity>
 
-        {uploadImageReq.isSuccess && (
-          <ThemedText
-            type='content'
-            content={`Image ${imgData.findIndex((item) => item.url) + 1} is uploaded successfully`}
-          />
-        )}
-
-        <View className='flex-row flex-wrap py-4'>
-          {imgData.map((image, index) => (
-            <View key={index} className={`w-1/3 h-28 p-1 rounded-lg ${index === 0 ? 'border-4 border-light-primary dark:border-dark-primary' : ''}`}>
-              <Image 
-                source={{ uri: image.uri }}
-                style={{ height: '100%', width: '100%', resizeMode: 'cover', borderRadius: 10 }}
-              />
-              {index === 0 && (
-                <View className='absolute bg-light-primary dark:bg-dark-primary px-2 rounded-br-xl'>
-                  <ThemedText type='subheading' content='Cover' />
-                </View>
-              )}
-            </View>
-          ))}
-        </View>
 
         <View className='h-12' />
 
-        <GestureHandlerRootView className='pl-2 py-4 w-full bg-light-muted dark:bg-dark-muted' >
+        <GestureHandlerRootView className='pl-2 py-4 w-full bg-light-muted/20 dark:bg-dark-muted/20' >
           <DraggableFlatList
             horizontal
             data={imgData}

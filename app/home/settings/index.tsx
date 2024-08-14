@@ -1,4 +1,4 @@
-import { View, Text, Image, TouchableOpacity, ScrollView, Switch, TextInput } from 'react-native'
+import { View, Text, Image, TouchableOpacity, ScrollView, Switch, TextInput, ImageBackground } from 'react-native'
 import React, { useEffect, useRef, useState } from 'react'
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 import { BlurView } from 'expo-blur'
@@ -24,6 +24,8 @@ import { router } from 'expo-router';
 import { useQuery } from 'react-query';
 import { userDetailsReq } from '@/functions/user';
 import { URLs } from '@/constants/Urls';
+
+import darkBackground from '@/assets/images/dark-background.png';
 
 
 
@@ -55,8 +57,12 @@ const SettingsScreen = () => {
   const { data, isLoading, isError, isSuccess } = useQuery({ queryKey: ['user'], queryFn: userDetailsReq, cacheTime:0 });
 
   return (
-    <View className='bg-light-background dark:bg-dark-background h-full p-4'>
-      
+    <View 
+        className='bg-light-background dark:bg-dark-background h-full p-4'
+        
+    >
+       
+   
       {/* SPACER */}
       <View className='h-12'/>
       

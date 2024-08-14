@@ -16,6 +16,7 @@ type Props = {
   onSubmitEditing?: () => void;
   returnKeyType?: 'default' | 'go' | 'google' | 'join' | 'next' | 'route' | 'search' | 'send' | 'yahoo' | 'done' | 'emergency-call';
   keyboardType?: KeyboardTypeOptions;
+  multiline?: boolean;
 };
 
 const InputField = React.forwardRef<TextInput, Props>(
@@ -33,6 +34,7 @@ const InputField = React.forwardRef<TextInput, Props>(
       onSubmitEditing,
       returnKeyType,
       keyboardType,
+      multiline,
     },
     ref
   ) => {
@@ -58,7 +60,7 @@ const InputField = React.forwardRef<TextInput, Props>(
           )}
           <TextInput
             ref={ref}
-            className={`text-normal text-light-text flex-grow  dark:text-dark-text m-1 p-4 rounded-xl ${prefix ? 'pl-2' : 'border-2 border-light-text/10 dark:border-dark-text/10'}`}
+            className={`text-normal text-light-text flex-grow  dark:text-dark-text m-1 p-3 rounded-xl ${prefix ? 'pl-2' : 'border-2 border-light-text/10 dark:border-dark-text/10'}`}
             editable={editable ?? true}
             placeholder={placeholder}
             placeholderTextColor={colors.mutedCode}
@@ -68,6 +70,8 @@ const InputField = React.forwardRef<TextInput, Props>(
             cursorColor={colors.primaryCode}
             returnKeyType={returnKeyType}
             keyboardType={keyboardType ?? 'default'}
+            multiline={multiline}
+            numberOfLines={multiline ? 6 : 1}
             onSubmitEditing={onSubmitEditing}
           />
         </View>

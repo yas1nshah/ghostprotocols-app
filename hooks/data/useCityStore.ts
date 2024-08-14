@@ -15,6 +15,7 @@ interface CityStore {
   setSearchText: (text: string) => void;
   filterCities: () => void;
   getCityById: (id: number) => City | undefined;
+  clearSearch: () => void;
 }
 
 const useCityStore = create<CityStore>((set) => ({
@@ -31,9 +32,9 @@ const useCityStore = create<CityStore>((set) => ({
     return { filteredCities: filtered };
   }),
   getCityById: (id: number) => {
-    const city = cities.find(city => city.id === id);
-    return city;
+    return cities.find(city => city.id === id);
   },
+  clearSearch: () => set({ searchText: '', filteredCities: cities }),
 }));
 
 export default useCityStore;
