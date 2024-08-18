@@ -22,7 +22,7 @@ import useThemeColors from '@/hooks/useThemeColors';
 
 import sellNowImg from '@/assets/images/ui/sell-now.png';
 import postAdImg from '@/assets/images/ui/post-ad.png';
-import darkBackground from '@/assets/images/dark-bg2.jpg'; 
+import darkBackground from '@/assets/images/bg-dark.png'; 
 
 import FeaturedAutoPlay from '@/components/FeaturedAutoPlay';
 import { router } from 'expo-router';
@@ -140,7 +140,7 @@ const AddListingScreen = () => {
           <View className='h-12' />
 
           {/* Trust Section */}
-          <View className='p-6 rounded-xl bg-light-card dark:bg-dark-card items-center space-y-1'>
+          <View className='p-6 rounded-xl blur-3xl bg-light-card dark:bg-dark-card items-center space-y-1'>
             <ThemedText type='heading' content='Why should you Trust Us?' />
 
             <View className='h-7' />

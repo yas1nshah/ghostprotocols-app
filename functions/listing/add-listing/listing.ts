@@ -5,6 +5,74 @@ import axios from "axios";
 import * as ImagePicker from "expo-image-picker";
 import * as SecureStore from 'expo-secure-store';
 
+
+export const getHome = async() => {
+  try {
+    const response = await axios.get(URLs.listing.home);
+     
+    return response.data;
+
+  } catch (error: any) {
+    // Check if error response is available
+    if (error.response) {
+      const { status, data } = error.response;
+
+      if (status === 500) {
+        // Handle 500 Internal Server Error
+      
+        const errorMessage = 'An internal server error occurred';
+        throw new Error(errorMessage);
+      }
+
+      if (status === 422) {
+        // Handle 422 Unprocessable Entity
+ 
+        const errorMessages = data.error;
+        // Flatten and join error messages
+        const formattedMessages = Object.values(errorMessages).flat().join(' ');
+        throw new Error(formattedMessages || 'Validation failed');
+      }
+    }
+
+    // Handle network or other errors
+    throw new Error(error.message || 'An error occurred during signup');
+  }
+}
+
+export const getLisitng = async(id: string) => {
+  try {
+    const response = await axios.get(URLs.listing.view+id);
+     
+    return response.data;
+
+  } catch (error: any) {
+    // Check if error response is available
+    if (error.response) {
+      const { status, data } = error.response;
+
+      if (status === 500) {
+        // Handle 500 Internal Server Error
+      
+        const errorMessage = 'An internal server error occurred';
+        throw new Error(errorMessage);
+      }
+
+      if (status === 422) {
+        // Handle 422 Unprocessable Entity
+ 
+        const errorMessages = data.error;
+        // Flatten and join error messages
+        const formattedMessages = Object.values(errorMessages).flat().join(' ');
+        throw new Error(formattedMessages || 'Validation failed');
+      }
+    }
+
+    // Handle network or other errors
+    throw new Error(error.message || 'An error occurred during signup');
+  }
+}
+
+
 export const postListing = async(form: AddListingState) => {
   // const form = useAddListingStore()
   // if(form.validate()) return

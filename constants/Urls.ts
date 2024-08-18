@@ -14,6 +14,10 @@ export const URLs = {
     },
     listing: {
         post: `${baseUrl}/v1/listings`,
-        uploadImage: `${baseUrl}/v1/gallery`
+        uploadImage: `${baseUrl}/v1/gallery`,
+        home: `${baseUrl}/v1/listings/home`,
+        image: `${baseUrl}/media/listings/`,
+        view: `${baseUrl}/v1/listings/`,
+        
     }
 }
