@@ -1,0 +1,61 @@
+import { View, Text } from 'react-native'
+import React from 'react'
+
+import makes from '@/constants/data/makes.json'
+[{
+  "id": 1,
+  "name": "Toyota",
+  "name_ur": "ٹویوٹا"
+}]
+import models from '@/constants/data/models.json'
+[
+  {
+    "id": 2,
+    "name": "Yaris",
+    "name_ur": "یارس",
+    "make_id": 1
+  },
+]
+import versions from '@/constants/data/versions.json'
+[
+  {
+    "id": 2,
+    "gen_id": 2,
+    "model_id": 1,
+    "name": "XLi VVTi",
+    "name_ur": "XLi VVTi",
+    "transmission": 2,
+    "engine_capacity": 1299,
+    "fuel_type": 1
+  },
+]
+
+the data structure in these json files are mentioned above
+now this each result is like this
+
+if i write a keyword lets suppose "T" it should give result as make names such as Toyota and Tata Motors
+then if i write "tyt" it should just display Toyota and things like this
+if make is detected then go look into models... like "tyt co" -> Toyota corolla
+ir "Toyota Corolla"=> Toyota Corolla if model is also detected then go to versions 
+"tyt corola x" -> toyota corolla XLi, toyota corolla XLi Plus
+if nothing comes up then display nothing 
+
+i waqnt to you treat it like this
+
+make model version..
+if version does not exist display make and model name
+if model too does not exist then go for make only
+if still then no display
+
+const search = () => {
+  return (
+    <View>
+      <Text>search</Text>
+      //ADD INPUT HERE
+
+      AND MAP RESULT HERE
+    </View>
+  )
+}
+
+export default search

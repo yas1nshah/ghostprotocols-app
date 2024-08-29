@@ -1,5 +1,8 @@
-export const baseUrl = "http://10.0.2.2:4000";
 
+// export const baseUrl = (typeof manifest.packagerOpts === `object`) && manifest.packagerOpts.dev
+//   ? manifest.debuggerHost.split(`:`).shift().concat(`:4000`)
+//   : `http://10.0.2.2:4000"`;;
+export const baseUrl = 'http://192.168.1.9:4000'
 
 export const URLs = {
     register : `${baseUrl}/v1/users/register`,

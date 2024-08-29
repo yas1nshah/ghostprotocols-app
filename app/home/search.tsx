@@ -1,192 +1,182 @@
-import { View, Image, ScrollView, TouchableOpacity, ImageBackground } from 'react-native';
-import React, { useEffect, useRef, useState } from 'react';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { useColorScheme } from "nativewind";
-import ThemedText from '@/components/ThemedText';
-import Animated, { useSharedValue, withSpring } from 'react-native-reanimated';
-import AnimatedHeader from '@/components/AnimatedHeader';
+import React, { useState } from 'react';
+import { View, Text, TextInput, TouchableOpacity, Alert, StyleSheet } from 'react-native';
+import { FlashList } from '@shopify/flash-list';
+import makes from '@/constants/data/makes.json';
+import models from '@/constants/data/models.json';
+import versions from '@/constants/data/versions.json';
 
-import qrImage from '@/assets/icons/qr.png';
-import arrTopRight from '@/assets/icons/arrow-top-right.png';
-import editIcon from '@/assets/icons/edit.png';
-import heartIcon from '@/assets/icons/heart.png';
-import adsIcon from '@/assets/icons/ads.png';
-import servicesIcon from '@/assets/icons/services.png';
-import subscriptionsIcon from '@/assets/icons/subscriptions.png';
-import darkThemeIcon from '@/assets/icons/dark-theme.png';
-import instagramIcon from '@/assets/icons/instagram.png';
-import facebookIcon from '@/assets/icons/facebook.png';
-import whatsappIcon from '@/assets/icons/whatsapp.png';
-import tiktokIcon from '@/assets/icons/tiktok.png';
-import useThemeColors from '@/hooks/useThemeColors';
+// Define types for the data structures
+type Make = {
+  id: number;
+  name: string;
+};
 
-import sellNowImg from '@/assets/images/ui/sell-now.png';
-import postAdImg from '@/assets/images/ui/post-ad.png';
-import darkBackground from '@/assets/images/bg-dark.png'; 
+type Model = {
+  id: number;
+  name: string;
+  make_id: number;
+};
 
-import FeaturedAutoPlay from '@/components/FeaturedAutoPlay';
-import { router } from 'expo-router';
+type Version = {
+  id: number;
+  name: string;
+  model_id: number;
+};
 
-const AddListingScreen = () => {
-  const colors = useThemeColors();
-  const { colorScheme } = useColorScheme();
-  const insets = useSafeAreaInsets();
+type ResultItem = {
+  name: string;
+  type: 'Make' | 'Model' | 'Version' | 'None';
+  makeId?: number;
+  modelId?: number;
+  versionId?: number;
+};
 
-  const scrollViewRef = useRef(null);
-  const opacity = useSharedValue(0);
-  const [showHeader, setShowHeader] = useState(false);
+const Search: React.FC = () => {
+  const [query, setQuery] = useState<string>('');
+  const [results, setResults] = useState<ResultItem[]>([]);
 
-  useEffect(() => {
-    opacity.value = withSpring(showHeader ? 1 : 0);
-  }, [showHeader]);
-
-  const handleScroll = (event: any) => {
-    const contentOffsetY = event.nativeEvent.contentOffset.y;
-    const contentHeight = event.nativeEvent.contentSize.height;
-    const layoutHeight = event.nativeEvent.layoutMeasurement.height;
-    const scrollPercentage = (contentOffsetY / (contentHeight - layoutHeight)) * 100;
-    if (scrollPercentage > 20 && !showHeader) {
-      setShowHeader(true);
-    } else if (scrollPercentage <= 20 && showHeader) {
-      setShowHeader(false);
+  const handleSearch = (text: string) => {
+    setQuery(text);
+    if (text === '') {
+      setResults([]);
+      return;
     }
+
+    const lowerCaseText = text.toLowerCase().trim();
+    const [makeQuery, modelQuery, versionQuery] = lowerCaseText.split(' ');
+
+    // Match Makes
+    const matchingMakes = makes.filter((make: Make) =>
+      make.name.toLowerCase().includes(makeQuery)
+    );
+
+    // Match Models
+    let matchingModels: Model[] = [];
+    if (modelQuery) {
+      matchingModels = models.filter((model: Model) =>
+        model.name.toLowerCase().includes(modelQuery) &&
+        matchingMakes.some((make: Make) => make.id === model.make_id)
+      );
+    }
+
+    // Match Versions
+    let matchingVersions: Version[] = [];
+    if (versionQuery) {
+      matchingVersions = versions.filter((version: Version) =>
+        version.name.toLowerCase().includes(versionQuery) &&
+        matchingModels.some((model: Model) => model.id === version.model_id)
+      );
+    }
+
+    // Combine results based on query parts
+    let combinedResults: ResultItem[] = [];
+
+    if (matchingVersions.length > 0) {
+      // If versions are found, show all levels
+      combinedResults = matchingVersions.map((version: Version) => {
+        const model = matchingModels.find((model: Model) => model.id === version.model_id);
+        const make = matchingMakes.find((make: Make) => make.id === model?.make_id);
+        return { 
+          name: `${make?.name} ${model?.name} ${version.name}`, 
+          type: 'Version', 
+          makeId: make?.id, 
+          modelId: model?.id, 
+          versionId: version.id 
+        };
+      });
+    } else if (matchingModels.length > 0) {
+      // If models are found but no versions, show makes and models
+      combinedResults = matchingModels.map((model: Model) => {
+        const make = matchingMakes.find((make: Make) => make.id === model.make_id);
+        return { 
+          name: `${make?.name} ${model.name}`, 
+          type: 'Model', 
+          makeId: make?.id, 
+          modelId: model.id 
+        };
+      });
+      combinedResults = [...combinedResults, ...matchingMakes.map((make: Make) => ({
+        name: make.name, 
+        type: 'Make', 
+        makeId: make.id 
+      }))];
+    } else if (matchingMakes.length > 0) {
+      // If only makes are found
+      combinedResults = matchingMakes.map((make: Make) => ({
+        name: make.name, 
+        type: 'Make', 
+        makeId: make.id 
+      }));
+    } else {
+      combinedResults = [{ name: 'No results found', type: 'None' }];
+    }
+
+    setResults(combinedResults);
+  };
+
+  const handlePress = (item: ResultItem) => {
+    const result = {
+      make: item.makeId,
+      model: item.modelId || false,
+      version: item.versionId || false
+    };
+    console.log(result);
+    Alert.alert('Result', JSON.stringify(result));
   };
 
   return (
-    <View style={{ flex: 1 }}>
-      {/* Background Image */}
-      <ImageBackground
-        source={darkBackground}
-        style={{ flex: 1 }}
-        resizeMode="cover"
-      >
-        {/* Overlay with Opacity */}
-       
+    <View style={{ flex: 1, padding: 20 }}> 
+      <TextInput
+        style={styles.input}
+        placeholder="Search"
+        value={query}
+        onChangeText={handleSearch}
+      />
 
-        {/* SPACER */}
-        <View className='h-12' />
-
-        {/* ANIMATED HEADER */}
-        <AnimatedHeader opacity={opacity} title='Add Listing' />
-
-        <ScrollView
-          ref={scrollViewRef}
-          onScroll={handleScroll}
-          scrollEventThrottle={16}
-          showsVerticalScrollIndicator={false}
-        >
-          {/* HEADER */}
-          <ThemedText type='heading-xl' content='Add Listing' otherStyles='pb-4 pt-12' />
-
-          {/* Sell Now Section */}
-          <View className='p-4 my-2 rounded-xl bg-light-card dark:bg-dark-card flex-row items-center'>
-            <View className='pr-4 w-3/5'>
-              <View className='flex-row items-center'>
-                <ThemedText content='Let Team GP ' type='heading' />
-                <ThemedText content='Sell' type='heading' otherStyles='text-light-primary dark:text-dark-primary' />
-              </View>
-
-              <ThemedText content='Hassle-Free Dealings, Everything’s on Us' type='content' />
-
-              <TouchableOpacity className='w-2/3 my-2 bg-light-background dark:bg-dark-background px-4 py-1 rounded-xl flex-row items-center justify-evenly'>
-                <ThemedText content='SELL NOW' type='button' />
-                <View className='w-8 h-8 p-1'>
-                  <Image
-                    source={arrTopRight}
-                    style={{ height: '100%', width: '100%', resizeMode: 'contain', tintColor: colors.foregroundCode }}
-                  />
-                </View>
-              </TouchableOpacity>
-            </View>
-            <View className='w-1/3 flex-grow'>
-              <Image
-                source={sellNowImg}
-                style={{ width: '100%', height: undefined, aspectRatio: 1, resizeMode: 'contain' }}
-              />
-            </View>
-          </View>
-
-          {/* Post Ad Section */}
-          <View className='p-4 my-2 rounded-xl bg-light-card dark:bg-dark-card flex-row items-center'>
-            <View className='pr-4 w-3/5'>
-              <View className='flex-row items-center'>
-                <ThemedText content='Sell by GP ' type='heading' />
-                <ThemedText content='APP' type='heading' otherStyles='text-light-primary dark:text-dark-primary' />
-              </View>
-
-              <ThemedText content='Post an AD for FREE and reach thousands of Buyers' type='content' />
-
-              <TouchableOpacity
-                onPress={() => router.push('/home/addListing/add-car-form')}
-                className='w-2/3 my-2 bg-light-background dark:bg-dark-background px-4 py-1 rounded-xl flex-row items-center justify-evenly'
-              >
-                <ThemedText content='POST AD' type='button' />
-                <View className='w-8 h-8 p-1'>
-                  <Image
-                    source={arrTopRight}
-                    style={{ height: '100%', width: '100%', resizeMode: 'contain', tintColor: colors.foregroundCode }}
-                  />
-                </View>
-              </TouchableOpacity>
-            </View>
-            <View className='w-1/3 flex-grow'>
-              <Image
-                source={postAdImg}
-                style={{ width: '100%', height: undefined, aspectRatio: 1, resizeMode: 'contain' }}
-              />
-            </View>
-          </View>
-
-          <View className='h-12' />
-
-          {/* Trust Section */}
-          <View className='p-6 rounded-xl blur-3xl bg-light-card dark:bg-dark-card items-center space-y-1'>
-            <ThemedText type='heading' content='Why should you Trust Us?' />
-
-            <View className='h-7' />
-
-            <View className='flex-row gap-2'>
-              <View className='p-4 mt-5 w-1/2 rounded-xl bg-light-card dark:bg-dark-card items-center'>
-                <View className='bg-light-primary dark:bg-dark-primary rounded-full p-2 w-11 -mt-8 mb-3 items-center'>
-                  <ThemedText type='heading' content='#1' />
-                </View>
-                <ThemedText type='content' content={`Pakistan's upcoming marketplace`} />
-              </View>
-
-              <View className='p-4 mt-5 w-1/2 rounded-xl bg-light-card dark:bg-dark-card items-center'>
-                <View className='bg-light-primary dark:bg-dark-primary rounded-full p-2 w-11 -mt-8 mb-3 items-center'>
-                  <ThemedText type='heading' content='#1' />
-                </View>
-                <ThemedText type='content' content={`Pakistan's upcoming marketplace`} />
-              </View>
-            </View>
-
-            <View className='flex-row gap-2'>
-              <View className='p-4 mb-5 w-1/2 rounded-xl bg-light-card dark:bg-dark-card items-center'>
-                <ThemedText type='content' content={`Pakistan's upcoming marketplace`} />
-                <View className='bg-light-primary dark:bg-dark-primary rounded-full p-2 mt-2 w-11 -mb-8 items-center'>
-                  <ThemedText type='heading' content='#1' />
-                </View>
-              </View>
-
-              <View className='p-4 mb-5 w-1/2 rounded-xl bg-light-card dark:bg-dark-card items-center'>
-                <ThemedText type='content' content={`Pakistan's upcoming marketplace`} />
-                <View className='bg-light-primary dark:bg-dark-primary rounded-full p-2 mt-2 w-11 -mb-8 items-center'>
-                  <ThemedText type='heading' content='#1' />
-                </View>
-              </View>
-            </View>
-          </View>
-
-          <View className='h-12' />
-
-          <FeaturedAutoPlay />
-
-          <View className='h-12' />
-        </ScrollView>
-      </ImageBackground>
+      <FlashList
+        data={results}
+        keyExtractor={(item, index) => index.toString()}
+        renderItem={({ item }) => (
+          <TouchableOpacity 
+            style={[
+              styles.item,
+              item.type === 'Make' && styles.make,
+              item.type === 'Model' && styles.model,
+              item.type === 'Version' && styles.version
+            ]}
+            onPress={() => handlePress(item)}
+          >
+            <Text style={styles.itemText}>{item.name}</Text>
+          </TouchableOpacity>
+        )}
+        estimatedItemSize={60}
+      />
     </View>
   );
 };
 
-export default AddListingScreen;
+const styles = StyleSheet.create({
+  input: {
+    borderWidth: 1,
+    padding: 10,
+    marginBottom: 20
+  },
+  item: {
+    padding: 10,
+    marginBottom: 10
+  },
+  make: {
+    backgroundColor: 'red'
+  },
+  model: {
+    backgroundColor: 'green'
+  },
+  version: {
+    backgroundColor: 'blue'
+  },
+  itemText: {
+    color: 'white'
+  }
+});
+
+export default Search;

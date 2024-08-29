@@ -1,4 +1,4 @@
-import { View, ImageBackground, FlatList, Image, TouchableOpacity, Dimensions } from 'react-native';
+import { View, ImageBackground, FlatList, Image, TouchableOpacity, Dimensions, ScrollView } from 'react-native';
 import React from 'react';
 import darkBackground from '@/assets/images/bg-dark.png';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -10,11 +10,16 @@ import { URLs } from '@/constants/Urls';
 import { router } from 'expo-router';
 import SmallCard from '@/components/listings/SmallCard';
 import LottieView from 'lottie-react-native';
+import useThemeColors from '@/hooks/useThemeColors';
+
+import arrowIcon from '@/assets/icons/arrow-top-right.png'
+import Browse from '@/components/home/Browse';
 
 const { width } = Dimensions.get('window');
 
 const HomePage = () => {
   const { data, isLoading } = useQuery('home', getHome);
+  const colors = useThemeColors()
 
   const renderListing = ({ item }: { item: any }) => (
     // <TouchableOpacity
@@ -76,59 +81,113 @@ const HomePage = () => {
         style={{ flex: 1 }}
         resizeMode="cover"
       >
-        {!isLoading && (
-          <FlatList
-            data={data.recent_listings}
-            renderItem={renderListing}
-            keyExtractor={(item) => item.id.toString()}
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={{ paddingHorizontal: 10 }}
-          />
-        )}
-        {!isLoading && (
-          <FlatList
-            data={data.gp_managed_listings}
-            renderItem={renderListing}
-            keyExtractor={(item) => item.id.toString()}
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={{ paddingHorizontal: 10 }}
-          />
-        )}
-        <View className='flex-row items-center mb-1'>
-          <View className='w-6 h-6 rounded-full bg-light-background dark:bg-dark-background z'>
-              <LottieView
-              source={require('@/assets/lottie/sheild.json')}
-              autoPlay
-              loop          
-              style={{ width: '100%', height: '100%', aspectRatio: 1, zIndex: 20}}
-              resizeMode='contain'
-              />
-          </View>
-          <ThemedText
-          type='content'
-          content='Certified'
-          otherStyles='bg-light-background dark:bg-dark-background pl-1 pr-2 rounded-r-xl -ml-1 z-10'
-          />
-        </View>
+        <ScrollView className='p-2'>
+          
+          {/* <View className='bg-light-card dark:bg-dark-card p-4 rounded-xl flex-row justify-between items-center'>
+            <ThemedText
+            content='Browse Cars'
+            type='subheading'
+            />
+            <View className='w-6 h-6'>
+              <Image 
+                source={arrowIcon}
+                style={{ height: '100%', width: '100%', resizeMode: 'contain', tintColor: colors.foregroundCode }}
+                />
+            </View>
+          </View> */}
 
-        <View className='flex-row items-center mb-1'>
-          <View className='w-6 h-6 rounded-full bg-light-background dark:bg-dark-background z'>
-              <LottieView
-              source={require('@/assets/lottie/coin.json')}
-              autoPlay
-              loop          
-              style={{ width: '100%', height: '100%', aspectRatio: 1, zIndex: 20}}
-              resizeMode='contain'
+          <TouchableOpacity>
+            
+          </TouchableOpacity>
+
+          <Browse/>
+
+          <View className='my-4'>
+            <ThemedText
+            content="Managed by Ghost's"
+            type='heading'
+            otherStyles='py-2'
+            />
+            {!isLoading && (
+              <FlatList
+                data={data.gp_managed_listings}
+                renderItem={renderListing}
+                keyExtractor={(item) => item.id.toString()}
+                horizontal
+                showsHorizontalScrollIndicator={false}
               />
+            )}
           </View>
-          <ThemedText
-          type='content'
-          content='Featured'
-          otherStyles='bg-light-background dark:bg-dark-background pl-1 pr-2 rounded-r-xl -ml-1 z-10'
-          />
-        </View>
+
+          <View className='my-4'>
+            <ThemedText
+            content="Featured Cars"
+            type='heading'
+            otherStyles='py-2'
+            />
+            {!isLoading && (
+              <FlatList
+                data={data.featured_listings}
+                renderItem={renderListing}
+                keyExtractor={(item) => item.id.toString()}
+                horizontal
+                showsHorizontalScrollIndicator={false}
+              />
+            )}
+          </View>
+
+          <View className='my-4'>
+            <ThemedText
+            content="Recent Cars"
+            type='heading'
+            otherStyles='py-2'
+            />
+            {!isLoading && (
+              <FlatList
+                data={data.recent_listings}
+                renderItem={renderListing}
+                keyExtractor={(item) => item.id.toString()}
+                horizontal
+                showsHorizontalScrollIndicator={false}
+              />
+            )}
+          </View>
+          
+          <View className='flex-row items-center mb-1'>
+            <View className='w-6 h-6 rounded-full bg-light-background dark:bg-dark-background z'>
+                <LottieView
+                source={require('@/assets/lottie/sheild.json')}
+                autoPlay
+                loop          
+                style={{ width: '100%', height: '100%', aspectRatio: 1, zIndex: 20}}
+                resizeMode='contain'
+                />
+            </View>
+            <ThemedText
+            type='content'
+            content='Certified'
+            otherStyles='bg-light-background dark:bg-dark-background pl-1 pr-2 rounded-r-xl -ml-1 z-10'
+            />
+          </View>
+
+          <View className='flex-row items-center mb-1'>
+            <View className='w-6 h-6 rounded-full bg-light-background dark:bg-dark-background z'>
+                <LottieView
+                source={require('@/assets/lottie/coin.json')}
+                autoPlay
+                loop          
+                style={{ width: '100%', height: '100%', aspectRatio: 1, zIndex: 20}}
+                resizeMode='contain'
+                />
+            </View>
+            <ThemedText
+            type='content'
+            content='Featured'
+            otherStyles='bg-light-background dark:bg-dark-background pl-1 pr-2 rounded-r-xl -ml-1 z-10'
+            />
+          </View>
+
+        </ScrollView>
       </ImageBackground>
     </SafeAreaView>
   );
